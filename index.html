@@ -28,47 +28,96 @@
 			</ul>
 		</footer>
 
-<script type="text/javascript">
-
-   var selectedNavMap = {
-      '/': 'wm-homepage-link',
-      '/about/features': 'wm-explore-link',
-      '/ecommerce/website': 'wm-ecommerce-link',
-      '/domain/names': 'wm-subscriptions',
-      '/about/mailboxes': 'wm-subscriptions',
-      '/ecommerce/website': 'wm-ecommerce-link',
-      '/about/contact-us': 'wm-contact-us',
-      '/upgrade/website': 'wm-subscriptions',
-      '/blog': 'wm-mobile-blog',
-      '/stories': 'wm-stories'
-    }
-
-    function isHeaderAndFooterMobile() {
-        var isAndroidMobile = /Android/.test(navigator.userAgent) && /Mobile/.test(navigator.userAgent);
-        return /webOS|iPhone|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) || isAndroidMobile;
-    }
-
-    if (isHeaderAndFooterMobile()) {
-        document.getElementById("wix-menu").style.display = "none";
-        setTimeout(function() {
-            document.getElementById("wix-menu").style.display = "block";
-            W.Site.Common.DefaultLayout.init({
-                mobileOptimized: true,
-                selectedNav: selectedNavMap[window.location.pathname],
-                showTopBanner: false
-            });
-        }, 1000);
-    } else {
-        W.Site.Common.DefaultLayout.init({
-            mobileOptimized: true,
-            selectedNav: selectedNavMap[window.location.pathname],
-            showTopBanner: false
-        });
-    }
-</script>
-
+</section>
+<section id="contant-2">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="block-left">
+          <div class="contant-2-img"><img src="assets/img/mobile-phon-3.png" alt="website template image"></div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="block-right">
+          <div class="contant-2-text-area">
+            <div class="contant-2-header">
+              <h1>Onec ultrices ultricies tellus<br>
+                perfect screens here</h1>
+            </div>
+            <div class="contant-2-text">
+              <h2>Duis bibendum diam non<br>
+                erat facilisis tincidunt.</h2>
+              <p>Duis bibendum diam non erat facilaisis tincidunt. Fusce leo neque, lacinia at tempor vitae, porta at arcu. Vestibulum varius non dui at pulvinar. Ut egestas orci in quam sollicitudin aliquet.</p>
+              <button type="button" class="btn btn-default edit-button-3">LEARN MORE</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="testimonial">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="block">
+          <div class="testimonial-area">
+            <div class="tm-header">
+              <h2>What people say about us</h2>
+            </div>
+            <div class="tm-contant">
+              <div class="tm-contant-items" id="slide-testimonial">
+                <div class="tm-contant-list item">
+                  <div class="tm-img"><img src="assets/img/pepole-img.png" alt="website template image"></div>
+                  <div class="tm-text">
+                    <p>" It’s official – I love this app, I couldn’t be without it now." <span>- Ron Burgundy</span></p>
+                  </div>
+                </div>
+                <div class="tm-contant-list item">
+                  <div class="tm-img"><img src="assets/img/pepole-img.png" alt="website template image"></div>
+                  <div class="tm-text">
+                    <p>" It’s official – I love this app, I couldn’t be without it now." <span>- Ron Burgundy</span></p>
+                  </div>
+                </div>
+                <div class="tm-contant-list item">
+                  <div class="tm-img"><img src="assets/img/pepole-img.png" alt="website template image"></div>
+                  <div class="tm-text">
+                    <p>" It’s official – I love this app, I couldn’t be without it now." <span>- Ron Burgundy</span></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="submit-area">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="block">
+          <div class="submit-contant">
+            <div class="submit-header"> <i class="fa fa-envelope-o"></i>
+              <h3>Subscribe our Newsletter</h3>
+            </div>
+            <div class="submit-area">
+              <div class="submit-bottom">
+                <form action="#" method="post">
+                  <input type="text" placeholder="your email address">
+                  <input type="submit" value="submit">
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
 
 	</body>
 </html>
-4
+
