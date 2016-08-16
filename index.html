@@ -1,1 +1,74 @@
-Hello World
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Chase Roycroft on Github</title>
+	</head>
+	<body>
+		<nav>
+    		<ul>
+        		<li><a href="/">Home</a></li>
+	        	<li><a href="/about">About</a></li>
+        		<li><a href="/cv">CV</a></li>
+        		<li><a href="/blog">Blog</a></li>
+    		</ul>
+		</nav>
+		<div class="container">
+    		<div class="blurb">
+        		<h1>Hi there, I'm Hank Quinlan!</h1>
+				<p>I'm best known as the horrible cop from <em>A Touch of Evil</em> Don't trust me. <a href="/about">Read more about my life...</a></p>
+    		</div><!-- /.blurb -->
+		</div><!-- /.container -->
+		<footer>
+    		<ul>
+        		<li><a href="mailto:roycroft16c@gmail.com">email</a></li>
+        		<li><a href="https://github.com/chaseroycroft">github</a></li>
+        		<li><a href="https://facebook.com/chase.roycroft.1">facebook</a></li>
+
+
+			</ul>
+		</footer>
+
+<script type="text/javascript">
+
+   var selectedNavMap = {
+      '/': 'wm-homepage-link',
+      '/about/features': 'wm-explore-link',
+      '/ecommerce/website': 'wm-ecommerce-link',
+      '/domain/names': 'wm-subscriptions',
+      '/about/mailboxes': 'wm-subscriptions',
+      '/ecommerce/website': 'wm-ecommerce-link',
+      '/about/contact-us': 'wm-contact-us',
+      '/upgrade/website': 'wm-subscriptions',
+      '/blog': 'wm-mobile-blog',
+      '/stories': 'wm-stories'
+    }
+
+    function isHeaderAndFooterMobile() {
+        var isAndroidMobile = /Android/.test(navigator.userAgent) && /Mobile/.test(navigator.userAgent);
+        return /webOS|iPhone|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) || isAndroidMobile;
+    }
+
+    if (isHeaderAndFooterMobile()) {
+        document.getElementById("wix-menu").style.display = "none";
+        setTimeout(function() {
+            document.getElementById("wix-menu").style.display = "block";
+            W.Site.Common.DefaultLayout.init({
+                mobileOptimized: true,
+                selectedNav: selectedNavMap[window.location.pathname],
+                showTopBanner: false
+            });
+        }, 1000);
+    } else {
+        W.Site.Common.DefaultLayout.init({
+            mobileOptimized: true,
+            selectedNav: selectedNavMap[window.location.pathname],
+            showTopBanner: false
+        });
+    }
+</script>
+
+
+
+	</body>
+</html>
+4
