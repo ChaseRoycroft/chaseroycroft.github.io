@@ -5,7 +5,7 @@ author: Chase Roycroft
 email: yu@lijiayu.net
 description: "This is the site description"
 keywords: "website, Chase, keywords"
-baseurl: "/freshman21" # the subpath of your site, e.g. /blog/
+baseurl: ""
 url: "http://yulijia.net/freshman21" # the base hostname & protocol for your site
 locale: en_US
 
