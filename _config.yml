@@ -138,13 +138,36 @@ locales:
 ### your Blogroll info, only name can shown on the page.
 
 Blogroll:
-      - name: Freshman
-        href: http://yulijia.net/freshman
-        title: Another Jekyll blog theme
+      - name: Chase Roycroft
+        href: http://chaseroycroft.github.io
+        title: Chase's website
       - name: author's website
-        href: http://yulijia.net/
+        href:
         title: Lijia Yu's website
-
+      - name:
+        href:
+        title:
+      - name:
+        href:
+        title:
+      - name:
+        href:
+        title:
+      - name:
+        href:
+        title:
+      - name:
+        href:
+        title:
+      - name:
+        href:
+        title:
+      - name:
+        href:
+        title:
+      - name:
+        href:
+        title:
 
 ### Build settings
 markdown: kramdown
