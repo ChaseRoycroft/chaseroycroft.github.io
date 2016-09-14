@@ -1,10 +1,10 @@
 ### Site info:
 title: Chase Roycroft
-tagline: jekyll theme
-author: Lijia Yu
+tagline: Chase's website
+author: Chase Roycroft
 email: yu@lijiayu.net
-description: "Freshman21 is a Jekyll blog theme." # You can edit this line in _config.yml. It will appear in your document head meta and in your feed.xml site description
-keywords: "Jekyll, theme, Freshman21"
+description: "This is the site description"
+keywords: "website, Chase, keywords"
 baseurl: "/freshman21" # the subpath of your site, e.g. /blog/
 url: "http://yulijia.net/freshman21" # the base hostname & protocol for your site
 locale: en_US
