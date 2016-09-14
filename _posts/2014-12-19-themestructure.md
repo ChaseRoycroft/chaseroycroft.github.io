@@ -1,9 +1,10 @@
 ---
+published: false
 layout: post
 title: Theme structure
 modified: 2014-12-19
 categories: [articles, Howto]
-tags: 
+tags:
   - structure
 comments: true
 ---
@@ -13,7 +14,7 @@ comments: true
 
 You can see the simplest way of adding a page is just to add an HTML ( or markdown ) file in the root directory with a suitable name for the page you want to create. For example, aahome.md is the homepage link, about.md is the about page.
 
-All sidebar boxes html files are in the <code>_include</code> directory, their name begin with upper case. You can chose which sidebar boxes appears in the main page on the <q>sidebar.html</q> in the <code>_includes</code> directory. 
+All sidebar boxes html files are in the <code>_include</code> directory, their name begin with upper case. You can chose which sidebar boxes appears in the main page on the <q>sidebar.html</q> in the <code>_includes</code> directory.
 
 
 
@@ -25,7 +26,7 @@ All sidebar boxes html files are in the <code>_include</code> directory, their n
 |-- _config.yml
 |-- css
 |   `-- main.scss
-|-- d_categories.md           # categories link at navigation bar 
+|-- d_categories.md           # categories link at navigation bar
 |-- e_tags.md                 # tags at main navigation bar
 |-- feed.xml                  # RSS at main navigation bar
 |-- f_guestbook.md            # guest book like at navigation bar
@@ -78,7 +79,7 @@ There is nothing wrong with the above method, however some people like to keep t
 ├── _backup
 │   ├── en.tar.gz
 │   └── style.css
-├── categories                              # => http://yulijia.net/en/categories/ 
+├── categories                              # => http://yulijia.net/en/categories/
 │   └── index.md
 ├── _config.yml
 ├── css
@@ -132,7 +133,7 @@ There is nothing wrong with the above method, however some people like to keep t
 
 This theme's default highlighter is pygments.
 
-To change the highlight style, you should install **pygments**, and generate the css style which you wanted with code 
+To change the highlight style, you should install **pygments**, and generate the css style which you wanted with code
 
 <code>pygmentize -S default -f html > freshman/_sass/_syntax-highlighting.scss</code>
 

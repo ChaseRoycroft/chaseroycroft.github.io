@@ -1,14 +1,15 @@
 ---
+published: false
 layout: post
 title: How to set the config.yml file
 modified: 2014-12-19
 categories: [articles, Howto]
-tags: 
+tags:
   - configure
 comments: true
 ---
 
-The [config.yml file](https://github.com/yulijia/freshman21/blob/master/_config.yml) in the Freshman21 theme includes five parts. 
+The [config.yml file](https://github.com/yulijia/freshman21/blob/master/_config.yml) in the Freshman21 theme includes five parts.
 
 **First part** is the site info.
 
@@ -17,7 +18,7 @@ title: Freshman21 # blog title
 tagline: Another Jekyll theme, Freshman twenty-first # blog sub-titile
 author: Lijia YU # author name
 email: yu@lijiayu.net # author email
-description: "Freshman21 is a Jekyll blog theme." # You can edit this line in _config.yml. It will appear in your document head meta and in 
+description: "Freshman21 is a Jekyll blog theme." # You can edit this line in _config.yml. It will appear in your document head meta and in
 your feed.xml site description
 keywords: "Jekyll, theme, Freshman21" # html meta keywords
 baseurl: "/freshman21" # the subpath of your site, e.g. /blog
@@ -66,7 +67,7 @@ paginate: 5  # how many post can seen in the main page
 
 =====
 
-<ul style='list-style-type:none;'> 
+<ul style='list-style-type:none;'>
 <li id="[1]"> [1], you can set those info at <strong>Part3</strong> or just delete the <q>aboutme.html</q> at <q>sidebar.html</q> in <code>_include</code> folder. </li>
 </ul>
 
@@ -80,5 +81,4 @@ paginate: 5  # how many post can seen in the main page
    { % include Blogroll.html % }
    { % include Archives.html % }
 </div>
-``` 
-
+```

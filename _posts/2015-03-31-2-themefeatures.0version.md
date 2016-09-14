@@ -1,8 +1,8 @@
 ---
-published: true
+published: false
 title: 2.0 version
 layout: post
-author: Yu 
+author: Yu
 category: news
 tags:
 - version
@@ -30,14 +30,14 @@ Today, I update the theme with some new features. Welcome to use freshman21 2.0 
   - Open Graph META Tags  
   - Microdata(schema.org)
 
-The main difference between master and gh-pages: only one Javascript (Mathjax) be included in master branch. 
+The main difference between master and gh-pages: only one Javascript (Mathjax) be included in master branch.
 
 Master branch is a more purified html+css framework than gh-pages branch.
 
-Clone master branch: 
- 
+Clone master branch:
+
 ` git clone https://github.com/yulijia/freshman21.git -b master --single-branch`
- 
-Clone gh-pages branch: 
- 
+
+Clone gh-pages branch:
+
 `git clone https://github.com/yulijia/freshman21.git -b gh-pages --single-branch`
