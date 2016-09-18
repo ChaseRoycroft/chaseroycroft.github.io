@@ -1,10 +1,10 @@
 # Site settings
-title: MathJax
-email: info@mathjax.org
-description: "Beautiful math in all browsers."
+title: Abstract Nonsense
+email: roycroft16c@gmail.com
+description: "Chase's blog"
 ##baseurl: "/MathJax-website"
-url: "http://www.mathjax.org"
-author: MathJax Consortium
+#url: "http://www.mathjax.org"
+author: Chase Roycroft
 TimeZone: America/New_York
 
 # Build settings
