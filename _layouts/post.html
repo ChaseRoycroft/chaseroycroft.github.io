@@ -1,31 +1,65 @@
----
-layout: default
----
 
-<!-- original style from http://www.getmdl.io/templates/article/index.html -->
+<!-- Post Layout Start -->
 
-<div class="mdl-jekyll-ribbon"></div>
-  <post class="mdl-jekyll-post mdl-layout__content">
-    <div class="mdl-jekyll-container mdl-grid">
-      <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
-      <div class="mdl-jekyll-content mdl-color--white mdl-shadow--4dp content mdl-color-text--grey-800 mdl-cell mdl-cell--8-col">
-        <div class="mdl-jekyll-crumbs mdl-color-text--grey-500">
-          <a href="{{site.baseurl | prepend: site.url}}" title="Go Home">Home</a>{{ page.url | prepend: site.baseurl }}
-        </div>
-        <h3>{{ page.title }}</h3>
-          <p class="post-meta">
-            <i>{% if page.author %} by {{ page.author }} • {% endif %} {{ page.date | date: "%b %-d, %Y" }}{% if page.meta %} • {{ page.meta }}{% endif %}</i>
-          </p>
-          <p>
-            {{ content }}
-          </p>
-        <hr/>
-        <div class="mdl-post_author">
-          <i>
-            {{site.about_author_snippet_for_posts}} - {% if site.twitter_username %} Follow on <a href="https://twitter.com/{{ site.twitter_username }}" title="{{site.twitter_username}}">Twitter</a>{% endif %}
-          </i>
+<!DOCTYPE html>
+<html lang="{{ site.lang }}">
+
+  {% include head.html %}
+
+  <body>
+
+    {% include navigation.html %}
+
+    <section id="post" class="container content-section text-center">
+      <div class="row">
+        <div class="col-md-10 col-md-offset-1">
+
+          {% include swipe-instructions.html %}
+
+          <h1><strong>{{ page.title }}</strong></h1>
+          <h4>
+            <strong>{{ page.date | date_to_string }}</strong>
+            <small>
+              . category:
+              <a class="category" href="{{site.baseurl}}/categories/{{page.category | downcase}}.html">
+                {{ page.category }}
+              </a>.
+              <a href="{{site.baseurl}}{{page.url }}#disqus_thread">Comments</a>
+              <br />
+              {% for tag in page.tags %}
+                <a class="tag" href="{{site.baseurl}}/tags/{{tag}}.html">#{{ tag }}</a>
+              {% endfor %}
+            </small>
+          </h4>
+
+          {{ page.content | markdownify }}
+
+          {% include share.html %}
+
+          {% if jekyll.environment == "production" %}
+            {% include comments.html %}
+          {% endif %}
+
+
+          <hr />
+
+          {% if site.author_blurb %}
+          <div class="author row">
+            <img class="col-xs-4 col-sm-3 col-md-2" src="{{site.baseurl}}{{site.author_blurb_image}}" alt="Me" />
+            <p class="col-xs-8 col-sm-9 col-md-10">
+              {{ site.author_blurb }}
+            </p>
+          </div>
+          {% endif%}
         </div>
       </div>
-    </div>
-  </post>
-</div>
+    </section>
+
+    {% include footer.html %}
+
+    {% include js.html %}
+
+  </body>
+</html>
+
+<!-- Post Layout End -->
