@@ -1,928 +1,250 @@
----
-layout: default
-redirect_from:
-  - "/sponsors/mathjax-sponsorship-program/"
-  - "/sponsors/"
-  - "/demos/"
-  - "/demos/tex-samples/"
-  - "/demos/scaling-math/"
-  - "/demos/copy-and-paste/"
-  - "/contact/"
-  - "/about/"
-  - "/community/"
----
+<!doctype html>
+<!--
+  Material Design Lite
+  Copyright 2015 Google Inc. All rights reserved.
 
-<html>
-<head>
-<title>Title of the document</title>
-</head>
-<body>
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
 
+      https://www.apache.org/licenses/LICENSE-2.0
 
-    <h3>Beautiful math in all browsers</h3>
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License
+-->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="A front-end template that helps you build fast, modern mobile web apps.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <title>Material Design Lite</title>
 
-    <!-- Description -->
-    <p class="lead text-muted">This is my weblog.
-      <br>There are many like it, but this one is mine.</p>
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="icon" sizes="192x192" href="images/android-desktop.png">
 
-  </div>
-</section>
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Material Design Lite">
+    <link rel="apple-touch-icon-precomposed" href="images/ios-desktop.png">
 
+    <!-- Tile icon for Win8 (144x144 + tile color) -->
+    <meta name="msapplication-TileImage" content="images/touch/ms-touch-icon-144x144-precomposed.png">
+    <meta name="msapplication-TileColor" content="#3372DF">
 
-<section class="jumbotron" id="features">
+    <link rel="shortcut icon" href="images/favicon.png">
 
-  <div class="container">
-    <h2>Something &amp; something else</h2>
+    <!-- SEO: If your mobile URL is different from the desktop URL, add a canonical link to the desktop page https://developers.google.com/webmasters/smartphone-sites/feature-phones -->
+    <!--
+    <link rel="canonical" href="http://www.example.com/">
+    -->
 
-    <div class="row text-center">
-      <div class="col-sm-4">
-        <!-- <img alt="" src="img/integral.svg" class="img-responsive center-block"> -->
-        <div class="center-block" style="width:20vh; height:20vh; background-image:url(https://www.mathjax.org/img/integral.svg);background-position: 50% 50%;background-repeat: no-repeat;background-size: cover;}"></div>        <h3>High-quality typography</h3>
-        <p class="text-justify">MathJax™ uses CSS with web fonts or SVG, instead of bitmap images or Flash, so equations scale with surrounding text at all zoom levels.</p>
-        <p><a href="#modal-samples" class="btn btn-success" data-toggle="modal" data-target="#modal-samples">View samples</a>
-        </p>
-      </div>
-      <div class="col-sm-4">
-        <!-- <img alt="" src="img/modular.svg" class="img-responsive center-block"> -->
-        <div class="center-block" style="width:20vh; height:20vh; background-image:url(https://www.mathjax.org/img/modular.svg);background-position: 50% 50%;background-repeat: no-repeat;background-size: cover;}"></div>        <h3>Modular Input &amp; Output</h3>
-        <p class="text-justify">MathJax is highly modular on input and output. Use MathML, TeX and ASCIImath as input and produce HTML+CSS, SVG and MathML as output.</p>
-        <p><a href="#modal-livedemo" class="btn btn-success" data-toggle="modal" data-target="#modal-livedemo">Try a live demo</a>
-        </p>
-      </div>
-      <div class="col-sm-4">
-        <!-- <img alt="" src="img/a11y.svg" class="img-responsive center-block"> -->
-        <div class="center-block" style="width:20vh; height:20vh; background-image:url(https://www.mathjax.org/img/a11y.svg);background-position: 50% 50%;background-repeat: no-repeat;background-size: cover;}"></div>
-        <h3>Accessible &amp; reusable</h3>
-        <p class="text-justify">MathJax is compatible with screenreaders &amp; provides zoom for everyone. You can also copy equations into Office, LaTeX, wikis, and other software.</p>
-        <p><a href="#modal-zoom" class="btn btn-success" data-toggle="modal" data-target="#modal-zoom">Try a live demo</a>
-        </p>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-
-<section class="jumbotron" id="docs">
-
-  <div class="container">
-    <h2>Documentation</h2>
-
-    <div class="row text-center">
-      <div class="col-sm-4">
-        <!-- <img alt="" src="img/code.svg" class="img-responsive center-block"> -->
-        <div class="center-block" style="width:20vh; height:20vh; background-image:url(https://www.mathjax.org/img/code.svg);background-position: 50% 50%;background-repeat: no-repeat;background-size: cover;}"></div>        <h3>Simple integration</h3>
-        <p class="text-justify">
-          To quick start with our CDN,
-          <a href="#docs" type="button" aria-haspopup="true" data-html="true" data-toggle="popover" data-placement="right"  data-content="<code> &amp;lt;script src='https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'&amp;gt;&amp;lt;/script&amp;gt;</code>">copy this snippet</a>. You can also <a href="https://github.com/mathjax/MathJax/archive/master.zip">download a copy</a> and configure MathJax yourself.</p>
-        <p><a class="btn btn-success" href="http://docs.mathjax.org/en/latest/start.html">Jump to our docs &raquo;</a>
-        </p>
-      </div>
-      <div class="col-sm-4">
-        <!-- <img alt="" src="img/api.svg" class="img-responsive center-block"> -->
-        <div class="center-block" style="width:20vh; height:20vh; background-image:url(https://www.mathjax.org/img/api.svg);background-position: 50% 50%;background-repeat: no-repeat;background-size: cover;}"></div>        <h3>A rich API</h3>
-        <p class="text-justify">Use our extensive APIs to create interactive content, advanced authoring tools, and math-enabled web and mobile apps.</p>
-        <p><a class="btn btn-success" href="http://docs.mathjax.org/en/latest/api/index.html">Dive deeper &raquo;</a>
-        </p>
-      </div>
-      <div class="col-sm-4">
-        <!-- <img alt="" src="img/browsers.svg" class="img-responsive center-block"> -->
-        <div class="center-block" style="width:20vh; height:20vh; background-image:url(https://www.mathjax.org/img/browsers.svg);background-position: 50% 50%;background-repeat: no-repeat;background-size: cover;}"></div>        <h3>Works everywhere</h3>
-        <p class="text-justify">MathJax generates identical, high-quality output on all browsers &amp; platforms. Our support starts with IE 6, Firefox 3, Safari 2.</p>
-        <p><a class="btn btn-success" href="http://docs.mathjax.org/en/latest/misc/browser-compatibility.html">Check our overview &raquo;</a>
-        </p>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-
-    <hr>
-
-<script>/*
-    <section class="row sponsors-supporter" id="supporters">
-      <h3>Supporters</h3>
-      <div class="row text-center supporter-logos">
-      <!-- <div class="col-xs-6 col-sm-3 supporter-logo"> -->
-              <a class="col-xs-6 col-sm-3 supporter-logo" title="American Physical Society" href="http://www.aps.org" style="background-image:url(https://cdn.mathjax.org/mathjax/badge/sponsors/APSLogo_2color.gif);background-position: 50% 50%;background-repeat: no-repeat;background-size: 50%;}">
-              </a>
-              <a class="col-xs-6 col-sm-3 supporter-logo" title="OSA The Optical Society" href="http://www.osa.org" style="background-image:url(https://cdn.mathjax.org/mathjax/badge/sponsors/OSA_100.svg);background-position: 50% 50%;background-repeat: no-repeat;background-size: contain;}">
-              </a>
-              <a class="col-xs-6 col-sm-3 supporter-logo" title="Project Euclid" href="http://projecteuclid.org" style="background-image:url(https://cdn.mathjax.org/mathjax/badge/sponsors/ProjectEuclid.gif);background-position: 50% 50%;background-repeat: no-repeat;background-size: 80%;}">
-              </a>
-              <a class="col-xs-6 col-sm-3 supporter-logo" title="IOP Publishing" href="http://ioppublishing.org/" style="background-image:url(https://cdn.mathjax.org/mathjax/badge/sponsors/IOPP.gif);background-position: 50% 50%;background-repeat: no-repeat;background-size: contain;}">
-              </a>
-
-              <a class="col-xs-6 col-sm-3 supporter-logo" title="American Institute of Physics" href="http://www.aip.org" style="background-image:url(https://cdn.mathjax.org/mathjax/badge/sponsors/aip_logo_2line.gif);background-position: 50% 50%;background-repeat: no-repeat;background-size: 80%;}">
-              </a>
-              <a class="col-xs-6 col-sm-3 supporter-logo" title="London Mathematical Society" href="http://www.lms.ac.uk" style="background-image:url(https://cdn.mathjax.org/mathjax/badge/sponsors/LMS.gif);background-position: 50% 50%;background-repeat: no-repeat;background-size: contain;}">
-              </a>
-              <a class="col-xs-6 col-sm-3 supporter-logo" href="http://www.springernature.com/" title="Springer Nature" style="background-image:url(https://cdn.mathjax.org/mathjax/badge/sponsors/SpringerNatureLogo.svg);background-position: 50% 50%;background-repeat: no-repeat;background-size: contain;}">
-              </a>
-
-              <a class="col-xs-6 col-sm-3 supporter-logo"  title="Mathematical Association of America" href="http://www.maa.org" style="background-image:url(https://cdn.mathjax.org/mathjax/badge/sponsors/MAA.jpg);background-position: 50% 50%;background-repeat: no-repeat;background-size: 80%;}">
-              </a>
-              <a class="col-xs-6 col-sm-3 supporter-logo" title="Atypon" href="http://www.atypon.com" style="background-image:url(https://cdn.mathjax.org/mathjax/badge/sponsors/Atypon.png);background-position: 50% 50%;background-repeat: no-repeat;background-size: 85%;}">
-              </a>
-              <a class="col-xs-6 col-sm-3 supporter-logo" title="Oxford University Press" href="http://www.oup.com" style="background-image:url(https://cdn.mathjax.org/mathjax/badge/sponsors/OUP.jpg);background-position: 50% 50%;background-repeat: no-repeat;background-size: 90%;}">
-              </a>
-
-              <a class="col-xs-6 col-sm-3 supporter-logo" title="Cambridge University Press" href="http://cambridge.org" style="background-image:url(https://cdn.mathjax.org/mathjax/badge/sponsors/CUP.jpg);background-position: 50% 50%;background-repeat: no-repeat;background-size: 95%;}">
-              </a>
-              <a class="col-xs-6 col-sm-3 supporter-logo" title="The MathWorks" href="http://www.mathworks.com" style="background-image:url(https://cdn.mathjax.org/mathjax/badge/sponsors/Mathworks.jpg);background-position: 50% 50%;background-repeat: no-repeat;background-size: 95%;}">
-              </a>
-              <a class="col-xs-6 col-sm-3 supporter-logo" title="Highwire" href="http://www.highwire.org" style="background-image:url(https://cdn.mathjax.org/mathjax/badge/sponsors/HighWire.jpg);background-position: 50% 50%;background-repeat: no-repeat;background-size: 85%;}">
-              </a>
-
-              <a class="col-xs-6 col-sm-3 supporter-logo" title="Taylor&amp;Francis" href="http://www.taylorandfrancisgroup.com" style="background-image:url(https://cdn.mathjax.org/mathjax/badge/sponsors/TandF.gif);background-position: 50% 50%;background-repeat: no-repeat;background-size: 95%;}">
-              </a>
-              <a class="col-xs-6 col-sm-3 supporter-logo" title="Wiley" href="http://www.wiley.com" style="background-image:url(https://cdn.mathjax.org/mathjax/badge/sponsors/Wiley_logo.svg);background-position: 50% 50%;background-repeat: no-repeat;background-size: 95%;}">
-              </a>
-              <a class="col-xs-6 col-sm-3 supporter-logo" title="PLOS" href="http://www.plos.org" style="background-image:url(https://cdn.mathjax.org/mathjax/badge/sponsors/plos_logo.gif);background-position: 50% 50%;background-repeat: no-repeat;background-size: 95%;}">
-              </a>
-              <a class="col-xs-6 col-sm-3 supporter-logo" title="PLOS" href="http://www.ebsco.com" style="background-image:url(https://cdn.mathjax.org/mathjax/badge/sponsors/ebsco.svg);background-position: 50% 50%;background-repeat: no-repeat;background-size: 85%;}">
-              </a>
-              <a class="col-xs-6 col-sm-3 supporter-logo" title="Pearson" href="http://www.pearson.com" style="background-image:url(https://cdn.mathjax.org/mathjax/badge/sponsors/Pearson.svg);background-position: 50% 50%;background-repeat: no-repeat;background-size: 100%;}">
-              </a>
-              <a class="col-xs-6 col-sm-3 supporter-logo" title="IBM" href="http://www.ibm.com" style="background-image:url(https://cdn.mathjax.org/mathjax/badge/sponsors/ibm.png);background-position: 50% 50%;background-repeat: no-repeat;background-size: 100%;}">
-              </a>
-    </div>
-    </section>
-*/</script>
-
-    <hr>
-
-    <section class="row" id="friends">
-      <h2>Friends</h2>
-      <a class="col-xs-6 col-md-3 text-center" href="http://www.physicsforums.com">Physics Forums</a>
-      <a class="col-xs-6 col-md-3 text-center" href="http://www.freemathhelp.com">FreeMathHelp.com</a>
-      <a class="col-xs-6 col-md-3 text-center" href="http://www.rstudio.com/">RStudio</a>
-      <a class="col-xs-6 col-md-3 text-center" href="http://www.chameleonjohn.com/">ChameleonJohn</a>
-      <a class="col-xs-6 col-md-3 text-center" href="http://www.orthogonalpublishing.com/">Orthogonal Publishing L3C</a>
-      <a class="col-xs-6 col-md-3 text-center" href="http://www.tizra.com/">Tizra</a>
-      <a class="col-xs-6 col-md-3 text-center" href="https://cb.hbsp.harvard.edu/">Harvard Business Publishing</a>
-    </section>
-    <hr>
-  </div>
-
-</section>
-
-<section class="jumbotron" id="contact">
-
-  <div class="container">
-    <h2>Contact us</h2>
-
-    <div class="row text-center">
-      <div class="col-sm-4">
-        <!-- <img alt="" src="img/gh-mark.svg" class="img-responsive center-block"> -->
-        <div class="center-block" style="width:20vh; height:20vh; background-image:url(https://www.mathjax.org/img/gh-mark.svg);background-position: 50% 50%;background-repeat: no-repeat;background-size: cover;}"></div>        <h3>GitHub</h3>
-        <p class="text-justify">
-          We host our code (incl. this site) on GitHub. Please report issues &amp; submit patches!
-        </p>
-        <p>
-          <a class="btn btn-success" href="https://github.com/mathjax/">Visit us on GitHub &raquo;</a>
-        </p>
-      </div>
-      <div class="col-sm-4">
-        <!-- <img alt="" src="img/mailing.svg" class="img-responsive center-block"> -->
-        <div class="center-block" style="width:20vh; height:20vh; background-image:url(https://www.mathjax.org/img/mailing.svg);background-position: 50% 50%;background-repeat: no-repeat;background-size: cover;}"></div>        <h3>Mailing Lists</h3>
-        <p class="text-justify">
-          We host the <a href="https://groups.google.com/forum/#!forum/mathjax-users">MathJax-User</a> and <a href="https://groups.google.com/forum/#!forum/mathjax-dev">MathJax-Dev</a> Groups as well as a <a href="http://eepurl.com/hqn6-/">news list</a>.
-        </p>
-        <p><a class="btn btn-success" href="http://docs.mathjax.org/en/latest/community.html#forums">Learn more &raquo;</a>
-        </p>
-      </div>
-      <div class="col-sm-4">
-        <!-- <img alt="" src="img/share.svg" class="img-responsive center-block"> -->
-        <div class="center-block" style="width:20vh; height:20vh; background-image:url(https://www.mathjax.org/img/share.svg);background-position: 50% 50%;background-repeat: no-repeat;background-size: cover;}"></div>        <h3>Social</h3>
-        <p class="text-justify">You can reach out to us on <a href="https://twitter.com/mathjax">Twitter</a>, <a href="https://plus.google.com/+mathjax/">Google+</a>, <a href="https://www.facebook.com/mathjax">Facebook</a>, and <a href="http://www.linkedin.com/groups/MathJax-Community-3772588">LinkedIn</a>.</p>
-        <p><a class="btn btn-success" href="mailto:info@mathjax.org">Or send an email &raquo;</a>
-        </p>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-
-<section class="jumbotron" id="about">
-
-  <div class="container">
-    <h2>About us</h2>
-    <p>The MathJax Consortium is a joint venture of the <a href="http://www.ams.org">American Mathematical Society</a> (AMS) and the <a href="http://www.siam.org">Society for Industrial and Applied Mathematics</a> (SIAM) to advance mathematical and scientific content on the web.</p>
-    <div class="row text-center">
-
-      <div class="col-sm-4">
-        <h3>Core Goals</h3>
-        <p>The core of the MathJax project is the development of its state-of-the-art, open source, JavaScript platform for display of mathematics. Our key design goals are</p>
-        <ul>
-          <li>high-quality display of mathematics notation in all browsers</li>
-          <li>no special browser setup required</li>
-          <li>support for LaTeX, MathML and other equation markup directly in the HTML source.</li>
-          <li>an extensible, modular design with a rich API for easy integration into web applications.</li>
-          <li>support for accessibility, copy and paste and other rich functionality</li>
-          <li>interoperability with other applications and math-aware search.</li>
-        </ul>
-      </div>
-      <div class="col-sm-4">
-        <h3>The Steering Committee</h3>
-        <p>
-          The MathJax Steering Committee meets regularly to advise the MathJax team on its development goals and priorities. We’re grateful for the support of our committee members!</p>
-        <ul>
-          <li>Ted Kull, SIAM</li>
-          <li>Robert Harington, AMS</li>
-          <li>David Fullerton, Stack Overflow</li>
-          <li>Ken Rawson, IEEE</li>
-          <li>Paul Mostert, Elsevier</li>
-          <li>David Carlisle, NAG Ltd</li>
-          <li>Ed Woodward, OpenStax</li>
-          <li>Neil Soiffer</li>
-          <li>Jean Kaplansky, Independent Consultant</li>
-        </ul>
-      </div>
-      <div class="col-sm-4">
-        <h3>History</h3>
-        <p>
-          MathJax grew out of the popular <a href="http://www.math.union.edu/~dpvc/jsMath/">jsMath</a> project, an earlier Ajax-based math rendering system developed by Davide Cervone in 2004. In the following years, there were many significant developments relevant for web publication of mathematics: consolidation of browser support for CSS 2.1, Web Font technology, adoption of math accessibility standards, and increasing usage of XML workflows for scientific publication.</p>
-        <p>In 2009, AMS, Design Science, and SIAM formed the MathJax Consortium to enable Cervone and others to design MathJax from the ground up as a next-generation platform, while still benefiting from the extensive real-world experience gained from jsMath. Since its initial release in 2010, MathJax has become the gold standard for mathematics on the web.</p>
-      </div>
-      <div class="text-justify">
-        <h3>The MathJax Team</h3>
-        <p>The MathJax team is <a href="https://github.com/dpvc">Davide Cervone</a>, <a href="https://github.com/zorkow">Volker Sorge</a>, <a href="https://github.com/christianp">Christian Perfect</a>, and <a href="https://github.com/pkra">Peter Krautzberger</a> with support by the staff at AMS and SIAM.</p>
-      </div>
-
-    </div>
-    <footer>
-        <p>MathJax &copy;2009-{{ site.time | date: "%Y" }}</p>
-    </footer>
-  </div>
-</section>
-
-<!--Modals-->
-<section id="modal-samples" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="modal-samples-title">
-  <div class="modal-dialog modal-lg">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span>
-        </button>
-        <h2 class="modal-title" id="modal-samples-title">Making math beautiful since 2009</h2>
-      </div>
-      <div class="modal-body">
-        <p class="lead">Our homepage is configured to use MathJax's CommonHTML mode with web fonts to display the equations, which produces uniform layout and typesetting across browsers. But MathJax can also be configured to use HTML-CSS (for legacy browsers), SVG, and native MathML rendering when available in a browser. You can try the various output modes using the MathJax context Menu (which you access by ctrl+clicking / alt-clicking an equation) or the button below.</p>
-
-        <p>Select the rendering mode: &nbsp;
-          <select id="Renderer" onchange="setMode(this.value)" style="margin: 0px 0px 0px">
-            <option value="CommonHTML">CommonHTML</option>
-            <option value="NativeMML">MathML</option>
-            <option value="HTML-CSS">HTML-CSS</option>
-            <option value="SVG">SVG</option>
-          </select>
-        </p>
-
-
-        <h5>The Quadratic Formula</h5>
-
-        <math display="block">
-          <mrow>
-            <mi>x</mi>
-            <mo>=</mo>
-            <mfrac>
-              <mrow>
-                <mo>&#x2212;</mo>
-                <mi>b</mi>
-                <mo>&#x00B1;</mo>
-                <msqrt>
-                  <mrow>
-                    <msup>
-                      <mi>b</mi>
-                      <mn>2</mn>
-                    </msup>
-                    <mo>&#x2212;</mo>
-                    <mn>4</mn>
-                    <mi>a</mi>
-                    <mi>c</mi>
-                  </mrow>
-                </msqrt>
-              </mrow>
-              <mrow>
-                <mn>2</mn>
-                <mi>a</mi>
-              </mrow>
-            </mfrac>
-          </mrow>
-        </math>
-
-        <h5>Cauchy's Integral Formula</h5>
-
-        <math display="block">
-          <mstyle>
-            <mi>f</mi>
-            <mrow>
-              <mo>(</mo>
-              <mi>a</mi>
-              <mo>)</mo>
-            </mrow>
-            <mo>=</mo>
-            <mfrac>
-              <mn>1</mn>
-              <mrow>
-                <mn>2</mn>
-                <mi>π
-                  <!-- π -->
-                </mi>
-                <mi>i</mi>
-              </mrow>
-            </mfrac>
-            <msub>
-              <mo>∮</mo>
-              <mrow>
-                <mi>γ</mi>
-              </mrow>
-            </msub>
-            <mfrac>
-              <mrow>
-                <mi>f</mi>
-                <mo>(</mo>
-                <mi>z</mi>
-                <mo>)</mo>
-              </mrow>
-              <mrow>
-                <mi>z</mi>
-                <mo>−</mo>
-                <mi>a</mi>
-              </mrow>
-            </mfrac>
-            <mi>d</mi>
-            <mi>z</mi>
-          </mstyle>
-        </math>
-
-        <h5>Double angle formula for Cosines</h5>
-
-        <math display="block">
-          <mrow>
-            <mi>cos</mi>
-            <mo>&#x2061;</mo>
-            <mrow>
-              <mo>(</mo>
-              <mi>&#x03b8;</mi>
-              <mo>+</mo>
-              <mi>&#x03c6;</mi>
-              <mo>)</mo>
-            </mrow>
-            <mo>=</mo>
-            <mi>cos</mi>
-            <mo>&#x2061;</mo>
-            <mrow>
-              <mo>(</mo>
-              <mi>&#x03b8;</mi>
-              <mo>)</mo>
-            </mrow>
-            <mi>cos</mi>
-            <mo>&#x2061;</mo>
-            <mrow>
-              <mo>(</mo>
-              <mi>&#x03c6;</mi>
-              <mo>)</mo>
-            </mrow>
-            <mo>&#x2212;</mo>
-            <mi>sin</mi>
-            <mo>&#x2061;</mo>
-            <mrow>
-              <mo>(</mo>
-              <mi>&#x03b8;</mi>
-              <mo>)</mo>
-            </mrow>
-            <mi>sin</mi>
-            <mo>&#x2061;</mo>
-            <mrow>
-              <mo>(</mo>
-              <mi>&#x03c6;</mi>
-              <mo>)</mo>
-            </mrow>
-          </mrow>
-        </math>
-
-        <h5>Gauss' Divergence Theorem</h5>
-
-        <math display="block">
-          <mrow>
-            <mrow>
-              <msub>
-                <mo>&#x222b;</mo>
-                <mrow>
-                  <mi>D</mi>
-                </mrow>
-              </msub>
-              <mrow>
-                <mo>(</mo>
-                <mo>&#x2207;&#x22c5;</mo>
-                <mi>F</mi>
-                <mo>)</mo>
-              </mrow>
-              <mi>d</mi>
-              <mrow>
-                <mi>V</mi>
-              </mrow>
-            </mrow>
-            <mo>=</mo>
-            <mrow>
-              <msub>
-                <mo>&#x222b;</mo>
-                <mrow>
-                  <mo>&#x2202;</mo>
-                  <mi>D</mi>
-                </mrow>
-              </msub>
-              <mrow>
-                <mtext>&#x2009;</mtext>
-                <mi>F</mi>
-                <mo>&#x22c5;</mo>
-                <mi>n</mi>
-              </mrow>
-              <mi>d</mi>
-              <mi>S</mi>
-            </mrow>
-          </mrow>
-        </math>
-
-        <h5>Curl of a Vector Field</h5>
-
-        <math display="block">
-          <mrow>
-            <mover accent="true">
-              <mrow>
-                <mo>&#x2207;</mo>
-              </mrow>
-              <mrow>
-                <mo>&#x2192;</mo>
-              </mrow>
-            </mover>
-            <mo>&#x00d7;</mo>
-            <mover accent="true">
-              <mrow>
-                <mi>F</mi>
-              </mrow>
-              <mrow>
-                <mo>&#x2192;</mo>
-              </mrow>
-            </mover>
-            <mo>=</mo>
-            <mrow>
-              <mo>(</mo>
-              <mfrac>
-                <mrow>
-                  <mo>&#x2202;</mo>
-                  <msub>
-                    <mrow>
-                      <mi>F</mi>
-                    </mrow>
-                    <mrow>
-                      <mi>z</mi>
-                    </mrow>
-                  </msub>
-                </mrow>
-                <mrow>
-                  <mo>&#x2202;</mo>
-                  <mi>y</mi>
-                </mrow>
-              </mfrac>
-              <mo>&#x2212;</mo>
-              <mfrac>
-                <mrow>
-                  <mo>&#x2202;</mo>
-                  <msub>
-                    <mrow>
-                      <mi>F</mi>
-                    </mrow>
-                    <mrow>
-                      <mi>y</mi>
-                    </mrow>
-                  </msub>
-                </mrow>
-                <mrow>
-                  <mo>&#x2202;</mo>
-                  <mi>z</mi>
-                </mrow>
-              </mfrac>
-              <mo>)</mo>
-            </mrow>
-            <mstyle mathvariant="bold" mathsize="normal">
-              <mrow>
-                <mi>i</mi>
-              </mrow>
-            </mstyle>
-            <mo>+</mo>
-            <mrow>
-              <mo>(</mo>
-              <mfrac>
-                <mrow>
-                  <mo>&#x2202;</mo>
-                  <msub>
-                    <mrow>
-                      <mi>F</mi>
-                    </mrow>
-                    <mrow>
-                      <mi>x</mi>
-                    </mrow>
-                  </msub>
-                </mrow>
-                <mrow>
-                  <mo>&#x2202;</mo>
-                  <mi>z</mi>
-                </mrow>
-              </mfrac>
-              <mo>&#x2212;</mo>
-              <mfrac>
-                <mrow>
-                  <mo>&#x2202;</mo>
-                  <msub>
-                    <mrow>
-                      <mi>F</mi>
-                    </mrow>
-                    <mrow>
-                      <mi>z</mi>
-                    </mrow>
-                  </msub>
-                </mrow>
-                <mrow>
-                  <mo>&#x2202;</mo>
-                  <mi>x</mi>
-                </mrow>
-              </mfrac>
-              <mo>)</mo>
-            </mrow>
-            <mstyle mathvariant="bold" mathsize="normal">
-              <mrow>
-                <mi>j</mi>
-              </mrow>
-            </mstyle>
-            <mo>+</mo>
-            <mrow>
-              <mo>(</mo>
-              <mfrac>
-                <mrow>
-                  <mo>&#x2202;</mo>
-                  <msub>
-                    <mrow>
-                      <mi>F</mi>
-                    </mrow>
-                    <mrow>
-                      <mi>y</mi>
-                    </mrow>
-                  </msub>
-                </mrow>
-                <mrow>
-                  <mo>&#x2202;</mo>
-                  <mi>x</mi>
-                </mrow>
-              </mfrac>
-              <mo>&#x2212;</mo>
-              <mfrac>
-                <mrow>
-                  <mo>&#x2202;</mo>
-                  <msub>
-                    <mrow>
-                      <mi>F</mi>
-                    </mrow>
-                    <mrow>
-                      <mi>x</mi>
-                    </mrow>
-                  </msub>
-                </mrow>
-                <mrow>
-                  <mo>&#x2202;</mo>
-                  <mi>y</mi>
-                </mrow>
-              </mfrac>
-              <mo>)</mo>
-            </mrow>
-            <mstyle mathvariant="bold" mathsize="normal">
-              <mrow>
-                <mi>k</mi>
-              </mrow>
-            </mstyle>
-          </mrow>
-        </math>
-
-        <h5>Standard Deviation</h5>
-
-        <math display="block">
-          <mrow>
-            <mi>&#x03c3;</mi>
-            <mo>=</mo>
-            <msqrt>
-              <mrow>
-                <mfrac>
-                  <mrow>
-                    <mn>1</mn>
-                  </mrow>
-                  <mrow>
-                    <mi>N</mi>
-                  </mrow>
-                </mfrac>
-                <mstyle displaystyle="true">
-                  <mrow>
-                    <munderover>
-                      <mrow>
-                        <mo>&#x2211;</mo>
-                      </mrow>
-                      <mrow>
-                        <mi>i</mi>
-                        <mo>=</mo>
-                        <mn>1</mn>
-                      </mrow>
-                      <mrow>
-                        <mi>N</mi>
-                      </mrow>
-                    </munderover>
-                    <mrow>
-                      <msup>
-                        <mrow>
-                          <mo stretchy="false">(</mo>
-                          <msub>
-                            <mrow>
-                              <mi>x</mi>
-                            </mrow>
-                            <mrow>
-                              <mi>i</mi>
-                            </mrow>
-                          </msub>
-                          <mo>&#x2212;</mo>
-                          <mi>&#x03bc;</mi>
-                          <mo stretchy="false">)</mo>
-                        </mrow>
-                        <mrow>
-                          <mn>2</mn>
-                        </mrow>
-                      </msup>
-                    </mrow>
-                  </mrow>
-                </mstyle>
-              </mrow>
-            </msqrt>
-            <mo>.</mo>
-          </mrow>
-        </math>
-
-        <h5>Definition of Christoffel Symbols</h5>
-
-        <math display="block">
-          <mrow>
-            <msup>
-              <mrow>
-                <mo>(</mo>
-                <msub>
-                  <mrow>
-                    <mo>&#x2207;</mo>
-                  </mrow>
-                  <mrow>
-                    <mi>X</mi>
-                  </mrow>
-                </msub>
-                <mi>Y</mi>
-                <mo>)</mo>
-              </mrow>
-              <mrow>
-                <mi>k</mi>
-              </mrow>
-            </msup>
-            <mo>=</mo>
-            <msup>
-              <mrow>
-                <mi>X</mi>
-              </mrow>
-              <mrow>
-                <mi>i</mi>
-              </mrow>
-            </msup>
-            <msup>
-              <mrow>
-                <mo stretchy="false">(</mo>
-                <msub>
-                  <mrow>
-                    <mo>&#x2207;</mo>
-                  </mrow>
-                  <mrow>
-                    <mi>i</mi>
-                  </mrow>
-                </msub>
-                <mi>Y</mi>
-                <mo stretchy="false">)</mo>
-              </mrow>
-              <mrow>
-                <mi>k</mi>
-              </mrow>
-            </msup>
-            <mo>=</mo>
-            <msup>
-              <mrow>
-                <mi>X</mi>
-              </mrow>
-              <mrow>
-                <mi>i</mi>
-              </mrow>
-            </msup>
-            <mrow>
-              <mo>(</mo>
-              <mfrac>
-                <mrow>
-                  <mo>&#x2202;</mo>
-                  <msup>
-                    <mrow>
-                      <mi>Y</mi>
-                    </mrow>
-                    <mrow>
-                      <mi>k</mi>
-                    </mrow>
-                  </msup>
-                </mrow>
-                <mrow>
-                  <mo>&#x2202;</mo>
-                  <msup>
-                    <mrow>
-                      <mi>x</mi>
-                    </mrow>
-                    <mrow>
-                      <mi>i</mi>
-                    </mrow>
-                  </msup>
-                </mrow>
-              </mfrac>
-              <mo>+</mo>
-              <msubsup>
-                <mrow>
-                  <mi>&#x0393;</mi>
-                </mrow>
-                <mrow>
-                  <mi>i</mi>
-                  <mi>m</mi>
-                </mrow>
-                <mrow>
-                  <mi>k</mi>
-                </mrow>
-              </msubsup>
-              <msup>
-                <mrow>
-                  <mi>Y</mi>
-                </mrow>
-                <mrow>
-                  <mi>m</mi>
-                </mrow>
-              </msup>
-              <mo>)</mo>
-            </mrow>
-          </mrow>
-        </math>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-
-<section id="modal-livedemo" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="modal-livedemo-title">
-  <div class="modal-dialog modal-lg">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span>
-        </button>
-        <h2 class="modal-title" id="modal-livedemo-title">MathJax Live Demo</h2>
-      </div>
-      <div class="modal-body">
-        <p class="lead">Type text in the box below. Include some math as MathML, wrap TeX in <span>$</span> or <span>$$</span> delimiters, and ASCIImath in <span>`</span> delimiters.</p>
-        <p><a href="https://github.com/mathjax/MathJax/blob/master/test/sample-dynamic-2.html">Source on GitHub</a>
-        </p>
-
-        <textarea id="MathInput" rows="10" onkeyup="Preview.Update()" style="margin-top:5px; width: 100%;"></textarea>
-        <br/>
-        <br/>Preview is shown here:
-        <div id="MathPreview" style="border:1px solid; padding: 3px; width:50%; margin-top:5px"></div>
-        <div id="MathBuffer" style="border:1px solid; padding: 3px; width:50%; margin-top:5px;
-visibility:hidden; position:absolute; top:0; left: 0"></div>
-
-      </div>
-    </div>
-  </div>
-</section>
-
-<section id="modal-zoom" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="modal-zoom-title">
-  <div class="modal-dialog modal-lg">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span>
-        </button>
-        <h2 class="modal-title" id="modal-zoom-title">Accessibility and reuse.</h2>
-      </div>
-      <div class="modal-body">
-        <h3> Accessibility </h3>
-        <p class="lead">
-          MathJax is compatible with ChromeVox, Texthelp, JAWS, MathPlayer out of the box. We are continuously working to extend our compatibility with more screen­&#173;readers, so please <a href="#contact">let us know</a> about your experience.
-        </p>
-        <hr>
-        <h3> Zoom. </h3>
-        <div id="input">
-          <p class="lead">Enter \(\rm \LaTeX\) code and use the slider to scale.
-            <input id="tex" type="text" />
-          </p>
-          <div>
-            <input id="size" type="range" min="1" max="50" value="25">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="$$hosted_libs_prefix$$/$$version$$/material.cyan-light_blue.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+    #view-source {
+      position: fixed;
+      display: block;
+      right: 0;
+      bottom: 0;
+      margin-right: 40px;
+      margin-bottom: 40px;
+      z-index: 900;
+    }
+    </style>
+  </head>
+  <body>
+    <div class="demo-layout mdl-layout mdl-js-layout mdl-layout--fixed-drawer mdl-layout--fixed-header">
+      <header class="demo-header mdl-layout__header mdl-color--grey-100 mdl-color-text--grey-600">
+        <div class="mdl-layout__header-row">
+          <span class="mdl-layout-title">Home</span>
+          <div class="mdl-layout-spacer"></div>
+          <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable">
+            <label class="mdl-button mdl-js-button mdl-button--icon" for="search">
+              <i class="material-icons">search</i>
+            </label>
+            <div class="mdl-textfield__expandable-holder">
+              <input class="mdl-textfield__input" type="text" id="search">
+              <label class="mdl-textfield__label" for="search">Enter your query...</label>
+            </div>
           </div>
-          <div>
-
+          <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" id="hdrbtn">
+            <i class="material-icons">more_vert</i>
+          </button>
+          <ul class="mdl-menu mdl-js-menu mdl-js-ripple-effect mdl-menu--bottom-right" for="hdrbtn">
+            <li class="mdl-menu__item">About</li>
+            <li class="mdl-menu__item">Contact</li>
+            <li class="mdl-menu__item">Legal information</li>
+          </ul>
+        </div>
+      </header>
+      <div class="demo-drawer mdl-layout__drawer mdl-color--blue-grey-900 mdl-color-text--blue-grey-50">
+        <header class="demo-drawer-header">
+          <img src="images/user.jpg" class="demo-avatar">
+          <div class="demo-avatar-dropdown">
+            <span>hello@example.com</span>
+            <div class="mdl-layout-spacer"></div>
+            <button id="accbtn" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+              <i class="material-icons" role="presentation">arrow_drop_down</i>
+              <span class="visuallyhidden">Accounts</span>
+            </button>
+            <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="accbtn">
+              <li class="mdl-menu__item">hello@example.com</li>
+              <li class="mdl-menu__item">info@example.com</li>
+              <li class="mdl-menu__item"><i class="material-icons">add</i>Add another account...</li>
+            </ul>
+          </div>
+        </header>
+        <nav class="demo-navigation mdl-navigation mdl-color--blue-grey-800">
+          <a class="mdl-navigation__link" href=""><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">home</i>Home</a>
+          <a class="mdl-navigation__link" href=""><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">inbox</i>Inbox</a>
+          <a class="mdl-navigation__link" href=""><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">delete</i>Trash</a>
+          <a class="mdl-navigation__link" href=""><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">report</i>Spam</a>
+          <a class="mdl-navigation__link" href=""><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">forum</i>Forums</a>
+          <a class="mdl-navigation__link" href=""><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">flag</i>Updates</a>
+          <a class="mdl-navigation__link" href=""><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">local_offer</i>Promos</a>
+          <a class="mdl-navigation__link" href=""><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">shopping_cart</i>Purchases</a>
+          <a class="mdl-navigation__link" href=""><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">people</i>Social</a>
+          <div class="mdl-layout-spacer"></div>
+          <a class="mdl-navigation__link" href=""><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">help_outline</i><span class="visuallyhidden">Help</span></a>
+        </nav>
+      </div>
+      <main class="mdl-layout__content mdl-color--grey-100">
+        <div class="mdl-grid demo-content">
+          <div class="demo-charts mdl-color--white mdl-shadow--2dp mdl-cell mdl-cell--12-col mdl-grid">
+            <svg fill="currentColor" width="200px" height="200px" viewBox="0 0 1 1" class="demo-chart mdl-cell mdl-cell--4-col mdl-cell--3-col-desktop">
+              <use xlink:href="#piechart" mask="url(#piemask)" />
+              <text x="0.5" y="0.5" font-family="Roboto" font-size="0.3" fill="#888" text-anchor="middle" dy="0.1">82<tspan font-size="0.2" dy="-0.07">%</tspan></text>
+            </svg>
+            <svg fill="currentColor" width="200px" height="200px" viewBox="0 0 1 1" class="demo-chart mdl-cell mdl-cell--4-col mdl-cell--3-col-desktop">
+              <use xlink:href="#piechart" mask="url(#piemask)" />
+              <text x="0.5" y="0.5" font-family="Roboto" font-size="0.3" fill="#888" text-anchor="middle" dy="0.1">82<tspan dy="-0.07" font-size="0.2">%</tspan></text>
+            </svg>
+            <svg fill="currentColor" width="200px" height="200px" viewBox="0 0 1 1" class="demo-chart mdl-cell mdl-cell--4-col mdl-cell--3-col-desktop">
+              <use xlink:href="#piechart" mask="url(#piemask)" />
+              <text x="0.5" y="0.5" font-family="Roboto" font-size="0.3" fill="#888" text-anchor="middle" dy="0.1">82<tspan dy="-0.07" font-size="0.2">%</tspan></text>
+            </svg>
+            <svg fill="currentColor" width="200px" height="200px" viewBox="0 0 1 1" class="demo-chart mdl-cell mdl-cell--4-col mdl-cell--3-col-desktop">
+              <use xlink:href="#piechart" mask="url(#piemask)" />
+              <text x="0.5" y="0.5" font-family="Roboto" font-size="0.3" fill="#888" text-anchor="middle" dy="0.1">82<tspan dy="-0.07" font-size="0.2">%</tspan></text>
+            </svg>
+          </div>
+          <div class="demo-graphs mdl-shadow--2dp mdl-color--white mdl-cell mdl-cell--8-col">
+            <svg fill="currentColor" viewBox="0 0 500 250" class="demo-graph">
+              <use xlink:href="#chart" />
+            </svg>
+            <svg fill="currentColor" viewBox="0 0 500 250" class="demo-graph">
+              <use xlink:href="#chart" />
+            </svg>
+          </div>
+          <div class="demo-cards mdl-cell mdl-cell--4-col mdl-cell--8-col-tablet mdl-grid mdl-grid--no-spacing">
+            <div class="demo-updates mdl-card mdl-shadow--2dp mdl-cell mdl-cell--4-col mdl-cell--4-col-tablet mdl-cell--12-col-desktop">
+              <div class="mdl-card__title mdl-card--expand mdl-color--teal-300">
+                <h2 class="mdl-card__title-text">Updates</h2>
+              </div>
+              <div class="mdl-card__supporting-text mdl-color-text--grey-600">
+                Non dolore elit adipisicing ea reprehenderit consectetur culpa.
+              </div>
+              <div class="mdl-card__actions mdl-card--border">
+                <a href="#" class="mdl-button mdl-js-button mdl-js-ripple-effect">Read More</a>
+              </div>
+            </div>
+            <div class="demo-separator mdl-cell--1-col"></div>
+            <div class="demo-options mdl-card mdl-color--deep-purple-500 mdl-shadow--2dp mdl-cell mdl-cell--4-col mdl-cell--3-col-tablet mdl-cell--12-col-desktop">
+              <div class="mdl-card__supporting-text mdl-color-text--blue-grey-50">
+                <h3>View options</h3>
+                <ul>
+                  <li>
+                    <label for="chkbox1" class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
+                      <input type="checkbox" id="chkbox1" class="mdl-checkbox__input">
+                      <span class="mdl-checkbox__label">Click per object</span>
+                    </label>
+                  </li>
+                  <li>
+                    <label for="chkbox2" class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
+                      <input type="checkbox" id="chkbox2" class="mdl-checkbox__input">
+                      <span class="mdl-checkbox__label">Views per object</span>
+                    </label>
+                  </li>
+                  <li>
+                    <label for="chkbox3" class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
+                      <input type="checkbox" id="chkbox3" class="mdl-checkbox__input">
+                      <span class="mdl-checkbox__label">Objects selected</span>
+                    </label>
+                  </li>
+                  <li>
+                    <label for="chkbox4" class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
+                      <input type="checkbox" id="chkbox4" class="mdl-checkbox__input">
+                      <span class="mdl-checkbox__label">Objects viewed</span>
+                    </label>
+                  </li>
+                </ul>
+              </div>
+              <div class="mdl-card__actions mdl-card--border">
+                <a href="#" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-color-text--blue-grey-50">Change location</a>
+                <div class="mdl-layout-spacer"></div>
+                <i class="material-icons">location_on</i>
+              </div>
+            </div>
           </div>
         </div>
-        <div id="output"><script type="math/tex; mode=display">\rm\LaTeX</script></div>
-        <p>See <a href="http://docs.mathjax.org/en/latest/tex.html#supported-latex-commands">the documentation for supported commands</a>. With special thanks to <a href="http://checkmyworking.com/misc/makebigmaths/">Christian Perfect</a>
-        </p>
-        <hr>
-        <h3> Reuse </h3>
-        <p class="lead">Using the MathJax context menu, you can access the source of any mathematical expression either in MathML format, or in TeX if its source format was TeX.</p>
-
-        <p>To access the context menu, right-click on a math formula (if you are using Windows), or Control-click it (if you are using a Mac). In the sub-menu <code>Show Math as</code> you can choose between <code>MathML Code</code> and <code>TeX commands</code> to get a pop-up that allows you to copy the math source into another application. Try it out on the equation below!</p>
-
-        \[ \left [ &#8211; \frac{\hbar^2}{2 m} \frac{\partial^2}{\partial x^2} + V \right ] \Psi = i \hbar \frac{\partial}{\partial t} \Psi \]
-
-        <p>You can also watch a screencast of a MathJax equation being copied and pasted into a variety of applications below. Note that this screencast is based on MathJax v1.1 so the menu structure is a little different.</p>
-        <div class="embed-responsive embed-responsive-16by9">
-  <iframe class="embed-responsive-item" src="//www.youtube.com/embed/VBt0Qeq5GWw?version=3&amp;enablejsapi=1" allowfullscreen></iframe>
-        </div>
-      </div>
+      </main>
     </div>
-  </div>
-</section>
-
-<section id="modal-sponsorship" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="modal-sponsorship-title">
-  <div class="modal-dialog modal-lg">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span>
-        </button>
-        <h2 class="modal-title" id="modal-sponsorship-title">MathJax Sponsorship Program</h2>
-      </div>
-      <div class="modal-body">
-        <div class="entry-content">
-          <p>The MathJax project was initiated in 2009 by Design Science, the American Mathematical Society (AMS) and the Society for Industrial and Applied Mathematics (SIAMf) with the goal of creating a robust, easy-to-use, and universal solution for displaying high-quality mathematics online. From the beginning, MathJax was conceived as open-source software, on the principle that math display should be part of the common infrastructure of the web.</p>
-          <p>Providing a universal solution for online math display requires a long-term commitment. Our users need MathJax to be reliable and easy to use, now and in the future. This requires a continuous and coordinated rapid response to browser updates and bugs, keeping up with the proliferation of tablets, smartphones, and ebook readers, and a consistent approach towards new functionality and performance improvements. All of this is important to the community, and requires dedicated time, effort and money.</p>
-          <p>Our founding sponsors have been very generous in providing funding. However, as more and more individuals and organizations are using MathJax and its benefit to the community is growing, its base of support grew via the Sponsorship Program. To ensure the long-term stability of MathJax, we continuously reach out to the community and ask organizations to contribute to the MathJax project by becoming a <a href="#friends">Friend</a>, <a href="#supporters">Supporter</a>, or <a href="#partners">Partner</a>. <strong> All MathJax sponsors share a demonstrated and significant interest in the dissemination of mathematics on the web, in particular through the MathJax project and its activities.</strong></p>
-          <p>Please feel free to <a href="mailto:info@mathjax.org">contact us</a> for any further information about the sponsorship program.</p>
-          <h3>MathJax Friends</h3>
-          <p>By becoming a MathJax Friend, organizations show the community that they support the goal of easy-to-use, high-quality mathematics display on the web for everyone, and are contributing in a very concrete way to help MathJax realize that goal. MathJax Friends will be listed on the MathJax Sponsors page.</p>
-          <p><i>Summary of Benefits:</i>
-          </p>
-          <ul>
-            <li>A name (with link) on the <a href="#sponsors">MathJax Sponsors page</a>.</li>
-            <li>Use of the term “MathJax Friend” in corporate communications.</li>
-          </ul>
-          <p><i>Annual contribution:</i>
-            <br />$500+</p>
-          <h3>MathJax Supporters</h3>
-          <p>MathJax Supporters make an important contribution to the project and demonstrate their commitment to a durable math display solution for the web. Upon joining, Supporters receive exposure on the MathJax website, Facebook page and Twitter feed. This will alert their users to their interest in using the best math display technology to enhance their online viewing experience, and displays their support for a project benefitting the entire math, science, and education community.</p>
-          <p>Supporters also receive informative quarterly reports giving insight into project timelines, development plans, and upcoming activities. These reports enable to better plan their use of MathJax to take full advantage of MathJax resources to benefit their users.</p>
-          <p><i>Summary of Benefits (in addition to Friend benefits):</i>
-          </p>
-          <ul>
-            <li>Quarterly reports summarizing timelines, development plans and upcoming project activities.</li>
-            <li>Prominent, exclusive announcement in the News section on the MathJax homepage, a Twitter post and Facebook update upon joining.</li>
-            <li>A small logo (with link) on the <a href="#sponsors">MathJax Sponsors page</a>.</li>
-            <li>Use of the term “MathJax Supporter” and MathJax Supporter Badge in corporate communications.</li>
-          </ul>
-          <p><i>Annual contribution:</i>
-            <br />$5,000+ (for-profit) / 3,000+ (not-for-profit)</p>
-          <h3>MathJax Partners</h3>
-          <p>MathJax Partners are a driving force behind the project. They are discussion partners in determining the long-term direction of the project, and through exclusive benefits, we seek to ensure that Partners can offer their readers the highest quality math display and user experience.</p>
-          <p>Partners receive priority support and consideration for enhancements through a dedicated technical contact. This technical contact will work to ensure that issues receive prompt attention and receive a timely resolution. The contact will also meet with Partners to understand their requirements, serve as a liaison to the technical team, and work with Partners to be sure their requirements are being addressed to the extent possible within resource and technology constraints.</p>
-          <p><i>Summary of Benefits (in addition to Supporter benefits):</i>
-          </p>
-          <ul>
-            <li>Quarterly reports on the financial condition and budget forecasts for the project.</li>
-            <li>A dedicated technical contact to develop a personalized technical relationship, who will:
-              <ul>
-                <li>Coordinate priority response to technical issues and feature requests;</li>
-                <li>Work with Partners to understand and advise about technical requirements;</li>
-                <li>Organize one-on-one meetings, technical webinars and Q and A sessions with technical staff as needed.</li>
-              </ul>
-            </li>
-            <li>A press release (optionally joint) upon joining.</li>
-            <li>A large logo (with link) and paragraph on the <a href="#sponsors">MathJax Sponsors page</a>.</li>
-            <li>Use of the term “MathJax Partner” and MathJax Partner Badge in corporate communications.</li>
-          </ul>
-          <p><i>Annual contribution:</i>
-            <br />$20,000+
-          </p>
-          <p>For individuals and organization who would like to support MathJax, but aren’t able to become an official sponsor at this time, individual donations are also possible in any amount via the Donate button on the mathjax.org web site.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-
-
-
-<!-- Go to www.addthis.com/dashboard to customize your tools -->
-<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-57df0e12ed7d8f34"></script>
-</body>
+      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" style="position: fixed; left: -1000px; height: -1000px;">
+        <defs>
+          <mask id="piemask" maskContentUnits="objectBoundingBox">
+            <circle cx=0.5 cy=0.5 r=0.49 fill="white" />
+            <circle cx=0.5 cy=0.5 r=0.40 fill="black" />
+          </mask>
+          <g id="piechart">
+            <circle cx=0.5 cy=0.5 r=0.5 />
+            <path d="M 0.5 0.5 0.5 0 A 0.5 0.5 0 0 1 0.95 0.28 z" stroke="none" fill="rgba(255, 255, 255, 0.75)" />
+          </g>
+        </defs>
+      </svg>
+      <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 500 250" style="position: fixed; left: -1000px; height: -1000px;">
+        <defs>
+          <g id="chart">
+            <g id="Gridlines">
+              <line fill="#888888" stroke="#888888" stroke-miterlimit="10" x1="0" y1="27.3" x2="468.3" y2="27.3" />
+              <line fill="#888888" stroke="#888888" stroke-miterlimit="10" x1="0" y1="66.7" x2="468.3" y2="66.7" />
+              <line fill="#888888" stroke="#888888" stroke-miterlimit="10" x1="0" y1="105.3" x2="468.3" y2="105.3" />
+              <line fill="#888888" stroke="#888888" stroke-miterlimit="10" x1="0" y1="144.7" x2="468.3" y2="144.7" />
+              <line fill="#888888" stroke="#888888" stroke-miterlimit="10" x1="0" y1="184.3" x2="468.3" y2="184.3" />
+            </g>
+            <g id="Numbers">
+              <text transform="matrix(1 0 0 1 485 29.3333)" fill="#888888" font-family="'Roboto'" font-size="9">500</text>
+              <text transform="matrix(1 0 0 1 485 69)" fill="#888888" font-family="'Roboto'" font-size="9">400</text>
+              <text transform="matrix(1 0 0 1 485 109.3333)" fill="#888888" font-family="'Roboto'" font-size="9">300</text>
+              <text transform="matrix(1 0 0 1 485 149)" fill="#888888" font-family="'Roboto'" font-size="9">200</text>
+              <text transform="matrix(1 0 0 1 485 188.3333)" fill="#888888" font-family="'Roboto'" font-size="9">100</text>
+              <text transform="matrix(1 0 0 1 0 249.0003)" fill="#888888" font-family="'Roboto'" font-size="9">1</text>
+              <text transform="matrix(1 0 0 1 78 249.0003)" fill="#888888" font-family="'Roboto'" font-size="9">2</text>
+              <text transform="matrix(1 0 0 1 154.6667 249.0003)" fill="#888888" font-family="'Roboto'" font-size="9">3</text>
+              <text transform="matrix(1 0 0 1 232.1667 249.0003)" fill="#888888" font-family="'Roboto'" font-size="9">4</text>
+              <text transform="matrix(1 0 0 1 309 249.0003)" fill="#888888" font-family="'Roboto'" font-size="9">5</text>
+              <text transform="matrix(1 0 0 1 386.6667 249.0003)" fill="#888888" font-family="'Roboto'" font-size="9">6</text>
+              <text transform="matrix(1 0 0 1 464.3333 249.0003)" fill="#888888" font-family="'Roboto'" font-size="9">7</text>
+            </g>
+            <g id="Layer_5">
+              <polygon opacity="0.36" stroke-miterlimit="10" points="0,223.3 48,138.5 154.7,169 211,88.5
+              294.5,80.5 380,165.2 437,75.5 469.5,223.3 	"/>
+            </g>
+            <g id="Layer_4">
+              <polygon stroke-miterlimit="10" points="469.3,222.7 1,222.7 48.7,166.7 155.7,188.3 212,132.7
+              296.7,128 380.7,184.3 436.7,125 	"/>
+            </g>
+          </g>
+        </defs>
+      </svg>
+      <a href="https://github.com/google/material-design-lite/blob/mdl-1.x/templates/dashboard/" target="_blank" id="view-source" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored mdl-color-text--white">View Source</a>
+    <script src="$$hosted_libs_prefix$$/$$version$$/material.min.js"></script>
+  </body>
 </html>
