@@ -2,7 +2,7 @@
 published: false
 title: Post 1 title
 layout: post
-author: Yu
+author: Chase Roycroft
 category: articles
 tags:
 - First title
