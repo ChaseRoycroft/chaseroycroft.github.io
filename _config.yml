@@ -18,8 +18,7 @@ baseurl: ""
 
 # Google tracking id to track your visitors
 
-google-tracking-id: "UA-20516215-1"
-
+google-tracking-id: "UA-84149519-1"
 # Forces https everywhere in your website, except when you serve it locally
 # If you are not hosted on Github Pages, and your host doesn't support https
 # then you should disable it
@@ -146,6 +145,8 @@ social:
     url: "https://linkedin.com/in/chaseroycroft"
   - title: "instagram"
     url: "https://www.instagram.com/chaseroycroft/"
+  - title: "pinterest"
+    url: "https://pinterest.com/chaseroycroft"
   - title: "Atom/RSS"
     url: "/feed.xml"
 
