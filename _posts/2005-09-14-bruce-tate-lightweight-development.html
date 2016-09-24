@@ -1,0 +1,58 @@
+---
+layout: post
+section-type: post
+title: Bruce Tate - Lightweight Development Strategies
+date: '2005-09-14T10:13:00.000+02:00'
+author: Jørn Ølmheim
+category: tech
+tags: [ 'tdd', 'agile', 'java', 'spring', 'ruby' ]
+modified_time: '2005-09-14T11:19:10.846+02:00'
+blogger_id: tag:blogger.com,1999:blog-16320608.post-112668955079561092
+blogger_orig_url: http://joelmheim.blogspot.com/2005/09/bruce-tate-lightweight-development.html
+---
+
+How do you develop things in a lightweight way.
+
+Java and java development has to get simpler, more reliable and more efficient or it will die.
+
+Java bloat can be good. We need the new frameworks, but we need to be able to remove the deprecated stuff. The success
+of java and the shrikwrapped product acquisition model is forcing bloat. We need a new software model like subscription.
+
+Don't sell processes, sell principles:
+<ul>
+  <li>Small, smart teams</li>
+  <li>Good feedback from customers</li>
+  <li>Quality</li>
+  <li>Simple requirements management</li>
+  <li>Simplicity</li>
+  <li>Refactoring</li>
+  <li>Automated unit testing</li>
+</ul>
+
+Management fears agile development because they think it lacks dicipline. Agile is automated testing, continuous
+integration, refactoring and use of customer feedback. Make sure that you balance out the formal things you take out...
+
+POJO programming model is stretching java in that you add services through the use of Spring and other framework and the
+dependency injection principle.
+
+AOP are good for removing cross-cutting stuff like transactions and logging from the object. Spring provides AOP with
+"training wheels".
+
+Strategies for injecting behavior:
+<ul>
+  <li>Code generation (falling out of fashion)</li>
+  <li>Byte code generation (runtime - dynamic proxies, compile time - injection)</li>
+  <li>Source level metadata (annotations)</li>
+</ul>
+
+Java limitations is mainly that it is a rigid language, how to express configuration? Using Java or XML. What about
+metaprogramming in Java.
+
+Callbacks can be used to simulate closures in places where they provide benefit, like JDBC, transactions. Continuation
+in Java with things like WebFlow, Rife, Cocoon2 or Lakeshore. More on these topics in the Beyond Java talk tomorrow.
+
+We need code blocks (closures) and continuations in Java.
+
+Spring will replace EJB, annotations and AOP will get us into trouble in some points, but in the end will survive, java
+metaprogramming  will increase, REST wil slowly subsume WebServices (except maybe SOAP), one dynamic language explodes
+(Ruby?)

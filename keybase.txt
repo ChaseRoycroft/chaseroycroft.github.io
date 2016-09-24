@@ -1,0 +1,54 @@
+==================================================================
+https://keybase.io/joelmheim
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://olmheim.com
+  * I am joelmheim (https://keybase.io/joelmheim) on keybase.
+  * I have a public key ASBKf90vjTVpL8eBFR7V57nIUBe7nEgFelYa5S-ylxYDFQo
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "eldest_kid": "01204a7fdd2f8d35692fc781151ed5e7b9c85017bb9c48057a561ae52fb2971603150a",
+            "host": "keybase.io",
+            "kid": "01204a7fdd2f8d35692fc781151ed5e7b9c85017bb9c48057a561ae52fb2971603150a",
+            "uid": "112097f58310132e7bdcb47a1ccd9919",
+            "username": "joelmheim"
+        },
+        "service": {
+            "hostname": "olmheim.com",
+            "protocol": "http:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "client": {
+        "name": "keybase.io go client",
+        "version": "1.0.17"
+    },
+    "ctime": 1474228616,
+    "expire_in": 504576000,
+    "merkle_root": {
+        "ctime": 1474228580,
+        "hash": "776962aa4af11925fbfd576a353c5d5e40b6f3409fcffd97a37f541eacdd43ff853050ca585cfd3b0605a2423c3497abc07f5e109cc8e74ecb33d4700b14133f",
+        "seqno": 642017
+    },
+    "prev": "2afbd8a7eb8ab0b9c883e69c02174e9f7add891385d1c6ebc2ed3ca1e9eeb034",
+    "seqno": 8,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgSn/dL401aS/HgRUe1ee5yFAXu5xIBXpWGuUvspcWAxUKp3BheWxvYWTFAvN7ImJvZHkiOnsia2V5Ijp7ImVsZGVzdF9raWQiOiIwMTIwNGE3ZmRkMmY4ZDM1NjkyZmM3ODExNTFlZDVlN2I5Yzg1MDE3YmI5YzQ4MDU3YTU2MWFlNTJmYjI5NzE2MDMxNTBhIiwiaG9zdCI6ImtleWJhc2UuaW8iLCJraWQiOiIwMTIwNGE3ZmRkMmY4ZDM1NjkyZmM3ODExNTFlZDVlN2I5Yzg1MDE3YmI5YzQ4MDU3YTU2MWFlNTJmYjI5NzE2MDMxNTBhIiwidWlkIjoiMTEyMDk3ZjU4MzEwMTMyZTdiZGNiNDdhMWNjZDk5MTkiLCJ1c2VybmFtZSI6ImpvZWxtaGVpbSJ9LCJzZXJ2aWNlIjp7Imhvc3RuYW1lIjoib2xtaGVpbS5jb20iLCJwcm90b2NvbCI6Imh0dHA6In0sInR5cGUiOiJ3ZWJfc2VydmljZV9iaW5kaW5nIiwidmVyc2lvbiI6MX0sImNsaWVudCI6eyJuYW1lIjoia2V5YmFzZS5pbyBnbyBjbGllbnQiLCJ2ZXJzaW9uIjoiMS4wLjE3In0sImN0aW1lIjoxNDc0MjI4NjE2LCJleHBpcmVfaW4iOjUwNDU3NjAwMCwibWVya2xlX3Jvb3QiOnsiY3RpbWUiOjE0NzQyMjg1ODAsImhhc2giOiI3NzY5NjJhYTRhZjExOTI1ZmJmZDU3NmEzNTNjNWQ1ZTQwYjZmMzQwOWZjZmZkOTdhMzdmNTQxZWFjZGQ0M2ZmODUzMDUwY2E1ODVjZmQzYjA2MDVhMjQyM2MzNDk3YWJjMDdmNWUxMDljYzhlNzRlY2IzM2Q0NzAwYjE0MTMzZiIsInNlcW5vIjo2NDIwMTd9LCJwcmV2IjoiMmFmYmQ4YTdlYjhhYjBiOWM4ODNlNjljMDIxNzRlOWY3YWRkODkxMzg1ZDFjNmViYzJlZDNjYTFlOWVlYjAzNCIsInNlcW5vIjo4LCJ0YWciOiJzaWduYXR1cmUifaNzaWfEQL1unxU7PvdCrjMFsP3j+iZSY2ss1fsXrzr/tzmZoD3cGdfL7kWFHWEJPn7x4MDiDnqHIBF3B7xv1Z+IcIGLgA2oc2lnX3R5cGUgpGhhc2iCpHR5cGUIpXZhbHVlxCDqFJ9MdlXLvm3or8weDu4M5oZbJCfsaDiFqenWVmJx2aN0YWfNAgKndmVyc2lvbgE=
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/joelmheim
+
+==================================================================

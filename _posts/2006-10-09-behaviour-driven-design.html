@@ -1,0 +1,36 @@
+---
+layout: post
+section-type: post
+title: Behaviour-Driven Design
+date: '2006-10-09T22:07:00.000+02:00'
+author: Jørn Ølmheim
+category: tech
+tags: [ 'tdd', 'ddd', 'bdd' ]
+modified_time: '2006-10-09T23:29:22.330+02:00'
+blogger_id: tag:blogger.com,1999:blog-16320608.post-116042927476158197
+blogger_orig_url: http://joelmheim.blogspot.com/2006/10/behaviour-driven-design.html
+---
+
+Finally some time to talk about my most recent pet pieve. Rest assured, the message is just the same as with my rants on
+Test-Driven Development. But as Dan says: It's all about getting the words right. Dan has gotten this impulse from
+Domain Driven Design, and you all should know how I feel about that.
+
+So what is the core message: TDD is not about testing, it's all about behaviour!!! Behaviour-Driven Design helps us put
+the right focus on unit testing. Is this really any different from TDD? Well, not if you do it right. The problem is
+that the right way to do TDD is often hidden by the word Test. Many people think the main benefit of Test-Driven Design
+is testing your code, which is natural with this name.
+
+**WRONG!**
+
+The most important benefit of TDD is that it drives the design, the behaviour of your code. This is what BDD helps point
+out. BDD is an extension of TDD and Acceptance-Test Driven Planning. Basically it gives a template to use when defining
+User stories, that includes a context for the story, a benefit that the feature will give and a set of scenarios that
+can be used for acceptance tests.
+
+For me this puts a required frame around the whole concept of developing quality code. There needs to be a connection
+between the story with its acceptance criteria, and the tests that we write for the code.
+
+<a href="http://www.jbheave.org">JBehave</a> is a testing framwork that tries to make it easier to write tests the way
+the should be written. Its Ruby cousin is <a href="http://www.rbheave.org">rBehave</a> (the site is not operational yet,
+coming soon). I haven't had the chance to try them out yet, so the code will have to wait until another time. Be sure to
+check it out.

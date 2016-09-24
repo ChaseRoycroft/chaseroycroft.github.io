@@ -3,7 +3,8 @@
 
 # NB! Set your site's url, otherwise stuff will break :)
 
-url: https://chaseroycroft.github.io
+url: "https://olmheim.com"
+
 
 # If you're hosting your site at a Project repository on GitHub pages
 # (https://yourusername.github.io/repository-name)
@@ -12,34 +13,35 @@ url: https://chaseroycroft.github.io
 #
 # NB! Without this *nothing* will work, because it's used in every path :)
 
-baseurl: /personal-jekyll-theme
+baseurl: ""
 
-# Google tracking id
+# Google tracking id to track your visitors
 
-google-tracking-id: ""
+google-tracking-id: "UA-20516215-1"
 
 # Forces https everywhere in your website, except when you serve it locally
 # If you are not hosted on Github Pages, and your host doesn't support https
 # then you should disable it
 
-force-https: True
+force-https: False
 
 #############
 # HTML Head #
 #############
 
 lang: "en"
-author: "John Smith"
-title: "{ John Smith }"
-description: "Blog and website of John Smith, blogging mainly for tech. Opinions expressed are mine."
-keywords: "smith, jones, personal, jekyll, theme"
+author: "Jørn Ølmheim"
+title: "Olmheim.com"
+description: "Blog and website of Jørn Ølmheim, blogging mainly for tech. Opinions expressed are mine."
+keywords: "olmheim, jorn, ølmheim, jørn, personal, blog, software architecture, technology, agile"
 favicon: "/img/favicon.ico"
+404-img: "/img/labtocat.png"
 
 ################
 # Header layout #
 ################
 
-black-favicon: "/img/black-lab-glass.ico"
+black-favicon: "/img/coffee.png"
 
 background-img: "../img/intro-bg.jpg"
 
@@ -55,16 +57,10 @@ type-speed: 10
 start-delay: 200
 delete-delay: 5000
 lines: # You can add HTML Tags in the Text
-  - text: "The lower you fall, the higher you'll fly."
-  - text: "Where’s your will to be weird?"
+  - text: "Beauty of style and harmony and grace and good rhythm depends on simplicity."
+  - text: "The job is done, not when there's nothing more to add, but when there's nothing more to take away."
 
-me-img: "/img/jetpacktocat.png"
-
-##############################
-# Color the browser elements #
-##############################
-color-browser: "#000000"
-apple-status-bar-style: "black"
+me-img: "/img/joe_avatar.jpg"
 
 ################
 # Web app mode #
@@ -85,11 +81,9 @@ icon-192p: "/img/web-app/icon-192p.png"
 # Blog #
 ########
 
-enable-gesture-navigation: True
+post-preview-words: 150
 
-post-preview-words: 96
-
-paginate: 5
+paginate: 10
 
 email-share: True
 fb-share: True
@@ -98,11 +92,11 @@ linkedin-share: True
 reddit-share: True
 google-plus-share: True
 tumblr-share: True
-pinterest-share: True
+pinterest-share: False
 pocket-share: True
-vkontakte-share: True
+vkontakte-share: False
 
-disqus-shortname: "panossakkos"
+disqus-shortname: "joelmheim"
 
 syntax-highlight: True
 
@@ -126,18 +120,7 @@ timeline-img: "/img/timeline/default.png"
 # Contact #
 ###########
 
-email: "your@email.here"
-
-################
-# Author Blurb #
-################
-
-# The author blurb goes underneath blog posts.
-# This works best when your author blurb image has a transparent background, or matches your site background color.
-
-# if the author_blurb is not set, then this feature is skipped
-author_blurb: "John Smith is an awesome person. He lives in Flatland, where he works on two-dimensional engineering projects. In his spare time, John likes to eat cotton candy."
-author_blurb_image: "/img/author.png"
+email: "jorn@olmheim.com"
 
 ##################
 # Social Buttons #
@@ -145,13 +128,15 @@ author_blurb_image: "/img/author.png"
 
 social:
   - title: "facebook"
-    url: "https://facebook.com/"
+    url: "https://facebook.com/jorn.olmheim"
   - title: "twitter"
-    url: "https://twitter.com/"
+    url: "https://twitter.com/joelmheim"
   - title: "github"
-    url: "https://github.com/PanosSakkos/personal-jekyll-theme"
-  - title: "bitcoin"
-    url: "https://blockchain.info/address/1LHuKC9Em3KA5yoZaf7nngnNdf9K7s2gSi"
+    url: "https://github.com/joelmheim"
+  - title: "linkedin"
+    url: "https://no.linkedin.com/in/joelmheim"
+  - title: "instagram"
+    url: "https://www.instagram.com/joelmheim/"
   - title: "rss"
     url: "/feed.xml"
 
@@ -160,14 +145,6 @@ social:
 ############
 
 404-img: "/img/labtocat.png"
-
-##################
-# GPG on Keybase #
-##################
-
-keybase-username: johnsmith
-keybase-in-social: True
-keybase-in-footer: True
 
 ################################################################################
 
@@ -178,7 +155,8 @@ keybase-in-footer: True
 pages_list:
   About: 'about'
   Blog: 'latest-post'
-  Timeline: 'timeline'
+  Tags: 'tag-cloud'
+#  Timeline: 'timeline'
   Contact: 'contact'
 
 # Exclusion list from the generated _site
@@ -196,4 +174,3 @@ sass:
 
 gems:
   - jekyll-paginate
-  - jemoji

@@ -1,0 +1,59 @@
+---
+layout: post
+section-type: post
+title: Software development professionalism
+date: '2007-09-26T10:57:00.001+02:00'
+author: Jørn Ølmheim
+category: tech
+tags: [ 'jaoo', 'agile', 'tdd' ]
+modified_time: '2007-09-26T11:03:05.742+02:00'
+blogger_id: tag:blogger.com,1999:blog-16320608.post-6600601370412481948
+---
+
+Robert C. Martin (aka. Uncle Bob) held this years opening keynote, here at JAOO. The theme was software craftsmanship.
+If you've followed my blog, you'll know that I'm a big fan of him, and have had the good fortune to have met him and
+learned from him before. In his talk he basically summarized the agile practices that makes for professional developers.
+His idea is that as professionals we have a duty to perform our craft in a discipline way. Things like producing working
+code in short iterations. And by the way, working code means tested code. There is just no other way. He also focused on
+the good design principles that make up good code.
+
+Decouple teams from each other.
+
+The main directive is that you should never allow yourself to be blocked.
+
+This is a central idea, and involves decoupling the teams, as well as the source code.
+
+Another problem he focused on is what he called "Turgid Viscous Architecture". This means that we don't want the big
+all-solving architecture, but rather smaller simpler architecture created by senior developers and architects who code.
+If you dictate it, you must be made to live with it, to make sure you don't create more problems that solutions with the
+architecture.
+
+How do you fix a mess? Incremental improvement. If everyone started checking in the code just a little better than when
+we checked it out. The "Grand Redesign" does not work. Rather look the mess "clean in the eye", and change it, one small
+piece at the time.
+
+Do progressive widening of the system. Small slices of the system from GUI to database, creating fully functioning
+pieces of code. Progressive deepening ,... (Start with something that works, then make it right, then make it fast)
+
+Don't write bad code. Bad code slows you down, fast. This relates to the "No broken windows" principle introduced by the
+Pragmatic Programmers. The only way to go fast is to go well. Clean code means small functions, clear function names,
+clear variable names. Your code should be readable.
+
+TDD is a fundamental professional practice.
+<ol>
+  <li>You are not allowed to write any production code until you have a failing unit test</li>
+  <li>2. You are not allowed to write more of a unit test then is sufficient for it to fail</li>>
+  <li>3. You are not allowed to write more production code that allows your test to pass</li>
+</ol>
+All the time running the tests. This forces you to work in short 30 to 60 second iterations.
+
+If we work this way we will always have code that executes all the time. We will produce a huge number of tests every
+day, every week. All changes to the code becomes incremental in the same short cycle.
+
+QA should not find anything.
+
+We should strive for 100% code coverage. This should be mandated by professionalism, not by management.
+
+Manual test scripts are immoral. Tests should all be automated. These tests should be the definition of done. QA should
+write the tests at the beginning of the iteration, and only be left with exploratory testing at the end of the
+iteration.

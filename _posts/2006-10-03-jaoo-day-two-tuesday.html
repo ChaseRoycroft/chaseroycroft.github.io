@@ -1,0 +1,87 @@
+---
+layout: post
+section-type: post
+title: JAOO Day Two - Tuesday
+date: '2006-10-03T22:13:00.000+02:00'
+author: Jørn Ølmheim
+category: tech
+tags: [ 'jaoo', 'agile', 'ddd', 'dsl', 'ruby', 'jruby' ]
+modified_time: '2006-10-04T12:01:00.650+02:00'
+blogger_id: tag:blogger.com,1999:blog-16320608.post-115994839765802808
+blogger_orig_url: http://joelmheim.blogspot.com/2006/10/jaoo-day-two-tuesday.html
+---
+
+The day started with a really interesting keynote by Guy Steele from Sun Microsystems. He is a language designer and the
+father of Scheme (lisp dialect used in Emacs among other things). The talk was about an interesting new language under
+development called Fortress. It is supposed to be a language for the scientific community, and as he said "It is
+supposed to do for Fortran what Java did for C". By which he means remove the possibility for making the most common
+mistakes, as well as providing platform independance and multithreading. The goal is to make the syntax of the language
+as close to mathematical notation as possible, plus they want to grow the type system and compiler, which means that
+they have to have an extendable type system where the types are not built in but specified in libraries (which you can
+override with your own implementations of course). Very cool stuff.
+
+Most of the rest of the day I spent in the track titled "What makes agile work?". The introduction was by Jutta
+Eckstein, and she talked about common pitfalls when adopting agile methods especially in large organizations. I'll do a
+separate post on that, as I think it is especially important for us in Statoil.
+
+Similarly, Roman Pichler talked about a failed attempt of introducing agile in a company, and why that failed. The main
+reason was that the initiative came from management, and as soon as the going got though, the management backed out and
+reverted to the "safe" old ways of the gant chart and the project plan.
+
+After lunch I enjoyed a session with Kevlin Henney, where he talks about the "Six faces of Agile Development". This are
+six different aspects of agile methods that influence how it works and how it can be implemented. The six faces are:
+<ul>
+  <li>Practices</li>
+  <li>Organization</li>
+  <li>Architecture</li>
+  <li>Tools</li>
+  <li>Skills</li>
+  <li>Attitude</li>
+</ul>
+
+These are all aspects that needs to be considered when trying to adopt an agile methodology. Basically his message (as
+well as others in this talk): When it comes to adopting agile techniques, one size does **not** fit all. Be agile in
+becoming agile.
+
+One of the most interesting talks of the day was by Jeff Sutherland (father of Scrum), on "Making good Scrum". The main
+message here was that Scrum easily gives you a productivity gain of the factor of 2, just by implementing it correctly.
+That is just by using product backlogs, sprints, daily scrums and so on. The potential, as shown by Toyota, and numerous
+examples in the IT industry, is a productivity gain in the order of 5-10 times. In order to acchieve this, the first
+step is to be really agressive in removing impediments for the teams. This attitude has to go all the way up to the top
+management. The next steps are really just becomming more agressive in the whole scrum implementation. Also the scrum
+implementation needs to be done throughout the organization, not just in the software development teams. The most
+successful companies, like PatientKeeper where Jeff now works as CTO, actually organize all levels of management as
+scrum teams. These are very cool idea that makes me look forward to the Scrum Master training class I'll be taking with
+him on Thursday and Friday.
+
+Afther this, Esther Derby, author of many books, among others "Behind Closed Doors - Secrets of Great Managers" (which I
+recommend all should read), had a talk about "Organizational Culture and agile adoptation". This basically had to do
+with how different organization cultures influence how you can introduce agile methods. Nothing really new here, but it
+is important that we evaluate the culture when we try to implement agile methods.
+
+For the last session of the day, I chose Eric Evans and his talk on how Domain Driven Design can benefit from Domain
+Specific Languages. Eric admits to being a little sceptical to DSLs and their use for core business domains. He thinks
+it might be just too complicated to build domain languages for business domains. Charles Simonyi from Intentional
+Software (the DSL guys referred to in Martin Fowlers Language Workbenches article) of course disagrees, and there was a
+little interesting discussion of this after the talk. Erics position is that the DSL are more useful for the generic
+subdomains, especially the technical ones. He used examples from time and money to show how a DSL could improve that
+code.
+
+After the talk we had a little discussion between Eric Evans, Dave Thomas and Obie Fernandez (Ruby on Rails guy working
+for ThoughtWorks in the US) (I was there too, but contributed very little to the discussion ;-) . It started out with
+Dave commenting on that the stuff Eric is doing in Time and Money has already been done many times by others, for
+instance the code in Kent Becks TDD book (actually written for Dave by Ward Cunningham !!!), and that "real" languages
+has these concepts built in. He referred to technology developed as part of financial applications. The discussion went
+on to discuss quality of libraries for languages, and that there really isn't any market for this as people does not
+want to pay for them, which leads to questionable quality in many if not most cases. We also touched upon other
+languages like Ruby and Ruby on Rails, and Obie was saying that with JRuby we would be able to deploy Rails apps on
+Tomcat, which would be great because then companies hosting Java web apps can host Rails apps. Then Dave said that that
+will bring the servers down because the Java VM is not resource sharable, which basically means that each session has
+its own JVM with resources and instances of shared libraries and the whole shebang. My point in relating this is that
+talking to Dave (or listening to him) always leaves me with a mixed feeling. The guy has been around for so long, and
+done so many different things, that he more or less knows as everything works (at least that's what it feels like to
+me), so while I'm excited to learn this stuff, I'm also bummed out by his disillusioned outlook on things. I guess that
+it comes at time when we all start being more realistic. I certainly allways learn alot from these discussions.
+
+After this I was quite exhausted after a long day, so I went to get some food and went to bed early. Tomorrow is another
+full day of interesting talks.

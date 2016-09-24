@@ -1,0 +1,65 @@
+---
+layout: post
+section-type: post
+title: Scaling Agile Development
+date: '2005-09-25T19:32:00.000+02:00'
+author: Jørn Ølmheim
+category: tech
+tags: [ 'agile', 'tdd', ]
+modified_time: '2005-09-26T00:51:27.783+02:00'
+blogger_id: tag:blogger.com,1999:blog-16320608.post-112768868616556989
+blogger_orig_url: http://joelmheim.blogspot.com/2005/09/scaling-agile-development.html
+---
+
+Robert C. Martin (aka Uncle Bob) is a carismatic speaker. He is clear and consise in his descriptions and entertaining
+in his presentations. I've obtained an electronic version of his talk and can provide this to those who are interessted.
+Just send me an email.
+
+The talk was split into two parts. The first half of the day uncle Bob spent going thorough the different principles and
+practices of agile development.  In the second half, Dave Thomas talked about the management view. If you don't know
+Dave Thomas (not the pragmatic programmer), he is the one who managed the Eclipse project starting with IBM Visual Age,
+so you know he knows a thing or two about scaling agile development.
+
+Bob started off by talking about measurements, under the banner in order to manage we need data. I'm a little embarrased
+to say that this surprised me, because that means that I have bought into the misconceptions that is going around about
+agile development that it lacks dicipline. Bob uses story points (or function points) to measure what a team can perform
+in a week, and then accompany this with a chart showing the remaining function points. With this you can estimate your
+delivery date. We'll come back to how he comes up with these function points.
+
+He then went on to talk about the fact that in most projects the delivery date is what is fixed earliest, and the
+requirements never are and never should be.
+
+The problem with the waterfall and other document centric approaches (apart its
+<a href="{{site.url}}/tech/2005/09/25/why-do-we-do-waterfall.html">history</a>) is that it lets you spend a
+lot of time in the start of the project without producing tangible results. Yes, a requirments document is tangible and
+sometimes even helpful, but if you spend the first seven months of a project doing requirements and only have three left
+for implementation it will fail no matter how good the implementation team is. The problem is really that there is no
+way to determine if a requirements document is done, or when a design document is done. It is however no problem to
+define when an implementation is done, and hence the problems in the end. Also the practice of putting in the quality
+at the end is doomed since you rearly have time to do a good job when the implementation fase slips.
+
+He then proceeded to talk about
+<a href="{{site.url}}/tech/2005/09/25/agile-development-according-to-uncle.html">agile development</a> and the
+different practices or principles in it. Now I don't want this blog entry to turn into a tutorial on agile development,
+so please follow the link above for an overview of agile development ala Robert Martin.
+
+Finally, Bob, did a programming excercise to show test driven development. He set out to write a bowling scoring game
+(from his book). The point of the excercise was to show that you will arrive at a different and simpler solution that
+with up-front design. First we did a collaborative design and arrived at classes like Game, Frame, Roll, and Tenth Frame
+(to handle the special 3 roll possibility of the last frame). Bob then starts from scratch with TDD approach. Simple
+creation test for Game, first test case all rolls scoring zero (gutter game), nest test all rolls scoring 1, next test
+one spare, next test one strike and final test all strikes. This produces one class Game with two methods roll(), which
+registeres the pins taken down in each roll and score() which very accurately  captured a clear bowling scoring
+algorithm. It was  interessting to watch. I actually didn't realize he had finished.
+
+Then we had Dave Thomas come in to tell us about scaling and how to fit in with management. Basically his statement was,
+give them whatever you have to to keep them happy, generate requirements documents from your source or Fitness cases,
+generate the plan, fake it if you have to to keep them off your back. Internally teams scale into teams of teams with
+aggregation of the practices. This comes with the price of longer time intervals between control at the top level, so
+you need to be able to trust the people running the teams and that they can perform. The team structure can be evolved
+starting with a few people or architected from the start. Stories at the top level are broken down and divided amongst
+the team according to the structure. This is not so relevant to us, as we don't have to scale that high, but some of it
+could be useful.
+
+To sum up, this sessions answered a lot of questions for me personally, and I'm going to take with me these new ideas
+when we look at how we can take a step furter and improve the way we run IT projects.

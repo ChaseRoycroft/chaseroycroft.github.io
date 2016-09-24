@@ -1,6 +1,7 @@
 #!/usr/bin/env ruby
 
 require 'yaml'
+require 'slugify'
 
 POSTS_DIR = '_posts/'
 TAGS_DIR = 'tags/'
@@ -9,20 +10,18 @@ Dir.foreach(POSTS_DIR) do |post|
 
   next if post == '.' or post == '..' or post == '.DS_Store'
   postYaml = YAML.load_file(POSTS_DIR + post)
-  unless (postYaml['tags'] == nil)
+  unless postYaml['tags'] == nil
     postYaml['tags'].each{|tag|
 
-      tag.downcase!
-
-      unless File.exist?(TAGS_DIR + tag + '.html')
+      tagFile = tag.slugify
+      unless File.exist?(TAGS_DIR + tagFile + '.html')
 
         puts('[+] Generating #' + tag + ' page')
 
-        File.open(TAGS_DIR + tag + '.html', 'w') {|f| f.write(
+        File.open(TAGS_DIR + tagFile + '.html', 'w') {|f| f.write(
         "---\nlayout: tag\nsection-type: tag\ntitle: " + tag + "\n---\n## Tag")}
 
       end
     }
   end
-
 end

@@ -1,0 +1,77 @@
+---
+layout: post
+section-type: post
+title: Java SE 7 - New language features
+date: '2008-05-13T10:18:00.003+02:00'
+author: Jørn Ølmheim
+category: tech
+tags: [ 'javaone', 'java', 'java7' ]
+modified_time: '2008-05-13T15:31:37.556+02:00'
+blogger_id: tag:blogger.com,1999:blog-16320608.post-123020632203789203
+blogger_orig_url: http://joelmheim.blogspot.com/2008/05/java-se-7-new-language-features.html
+---
+
+There are a number of new features that has been proposed for future Java releases, and when the spec lead for the new
+Java 7 release, Alex Buckley set up this talk, I was naturally interested in finding out what had been chosen.
+
+Alex cleverly avoided talking about many of the controversial issues, like closures or no closures, and instead focused
+on what is good language design and how to grow a language, as well as some of the smaller uncontested features that are
+almost certain to be included. All in all I thought it was a good approach, and a discussion on closures was done in
+other talks later in the week.
+
+So, to the language features he presented as almost certain to be included in the next version. The first thing he
+mentioned was that they were adding the possibility to switch on strings. Today this is not possible (only works with
+enums, byte, short, char and int), and is really a nice addition to the language.
+
+Next up was the possibility of multi-catch of exceptions. This will be very useful when you have to catch several
+exception and perform the same task. Today the solution would be to have repeated separate catch blocks and then call
+the same method for each catch block, while the new proposal allows catching multiple types in the same block.
+
+This code:
+<pre><code data-trim class="java">
+  try {...}
+  catch (X1 e) {foo();}
+  catch (X2 e) {foo();}
+  catch (X3 e) {bar();}
+</code></pre>
+will turn into this
+<pre><code data-trim class="java">
+  try {...}
+  catch (X1,X2 e) {foo();}
+  catch (X3    e) {bar();}
+</code></pre>
+
+Connected with this, is the possibility for safe re-throw, where the catch block will now allow re-throw of the same
+type that was caught. For example
+<pre><code data-trim class="java">catch(final Throwable e)</code></pre> that is really NullPointerException
+for instance will rethrow NullPointerException. Today, the rethrown exception will be Throwable,
+which is not good.
+
+Modularity in the language is another big thing. JSR 277 proposes a module system that is included in the language to
+provide similar functionality to what you can get with OSGi today. A core package like com.statoil.jef.core can be a
+module, and introduces an accessibility level of  classes and methods within a module. Will enable both package private
+and module private. Adding annotations for metadata like versioning of modules. The main advantage over OSGi is that it
+is in the language and things like javadoc and javap will understand the module concept. It has unfortunately many
+disadvantages over OSGi, and the JSR 277 work is only meant as a starting point. More of the features of OSGi are
+planned to be included in later versions.
+
+Then a demo was given about some of the additions to the Java annotation system. JSR-308 proposes several extensions to
+the annotation system meant to provide better compile-time type checking.
+<ol>
+  <li>Allow annontations in other places than declarations.</li>
+  <li>Pluggable type systems, that you can define to your specific needs, plug into the compiler, and use.</li>
+</ol>
+
+The focus here is very much compile-time verification of the code, and some of this seems like a good idea, but in my
+experience, this problem has never been so big as to warrant this level of effort. I'm sure that there are systems out
+there that can benefit from this extra type checking,  but to me this seems like too much for too little benefit. Makes
+the code more unreadable just for catching bugs that might not be there. I certainly prefer to use tools like Findbugs
+and unit testing instead. My main problem with the presentation was that they never mentioned these alternatives even
+with a single word.
+
+Alex then rounded off the talk with a discussion about the long term evolution of Java, areas of interest and of
+non-interest. This is a very interesting part, since it hits at what will be considered for future versions. The main
+message was (as I understood it), that even if something is not included in the Java language, it doesn't mean it is not
+on the platform (JVM), with a reference to other languages on the JVM like Groovy, Ruby, Python, Fortress and Scala.
+
+All in all a very enlightening talk.
