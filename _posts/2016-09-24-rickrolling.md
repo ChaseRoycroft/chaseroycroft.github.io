@@ -1,6 +1,6 @@
 ---
-published: false
-title: Post 1 title
+published: true
+title: Rickrolling
 layout: post
 author: Chase Roycroft
 category: articles
