@@ -57,8 +57,10 @@ type-speed: 10
 start-delay: 200
 delete-delay: 5000
 lines: # You can add HTML Tags in the Text
-  - text: "Beauty of style and harmony and grace and good rhythm depends on simplicity."
-  - text: "The job is done, not when there's nothing more to add, but when there's nothing more to take away."
+  - text: "My goal is to understand the nature of existence, and to engineer improvements thereupon."
+  - text: "Nothing in life is to be feared; it is only to be understood. Now is the time to understand more, so that we may fear less."
+  - text: "For me, it is far better to grasp the Universe as it really is than to persist in delusion, however satisfying and reassuring."
+  - text: "The armies of the world cannot stop an idea whose time has come."
 
 me-img: "/img/profile.jpg"
 
