@@ -3,7 +3,7 @@
 
 # NB! Set your site's url, otherwise stuff will break :)
 
-url: "https://olmheim.com"
+url: "https://chaseroycroft.github.io"
 
 
 # If you're hosting your site at a Project repository on GitHub pages
@@ -23,17 +23,17 @@ google-tracking-id: "UA-20516215-1"
 # If you are not hosted on Github Pages, and your host doesn't support https
 # then you should disable it
 
-force-https: False
+force-https: True
 
 #############
 # HTML Head #
 #############
 
 lang: "en"
-author: "Jørn Ølmheim"
-title: "Olmheim.com"
-description: "Blog and website of Jørn Ølmheim, blogging mainly for tech. Opinions expressed are mine."
-keywords: "olmheim, jorn, ølmheim, jørn, personal, blog, software architecture, technology, agile"
+author: "Chase Roycroft"
+title: "Abstract Nonsense"
+description: "Blog and website of Chase Roycroft. Opinions expressed are mine."
+keywords: "chase, roycroft, personal, blog, quantum, gravity, technology"
 favicon: "/img/favicon.ico"
 404-img: "/img/labtocat.png"
 
@@ -60,7 +60,7 @@ lines: # You can add HTML Tags in the Text
   - text: "Beauty of style and harmony and grace and good rhythm depends on simplicity."
   - text: "The job is done, not when there's nothing more to add, but when there's nothing more to take away."
 
-me-img: "/img/joe_avatar.jpg"
+me-img: "/img/profile.jpg"
 
 ################
 # Web app mode #
@@ -96,7 +96,7 @@ pinterest-share: False
 pocket-share: True
 vkontakte-share: False
 
-disqus-shortname: "joelmheim"
+disqus-shortname: "chaseroycroft"
 
 syntax-highlight: True
 
@@ -120,7 +120,7 @@ timeline-img: "/img/timeline/default.png"
 # Contact #
 ###########
 
-email: "jorn@olmheim.com"
+email: "roycroft16c@gmail.com"
 
 ##################
 # Social Buttons #
@@ -128,16 +128,16 @@ email: "jorn@olmheim.com"
 
 social:
   - title: "facebook"
-    url: "https://facebook.com/jorn.olmheim"
+    url: "https://facebook.com/chaseroycroft.1"
   - title: "twitter"
-    url: "https://twitter.com/joelmheim"
+    url: "https://twitter.com/chaseroycroft"
   - title: "github"
-    url: "https://github.com/joelmheim"
+    url: "https://github.com/chaseroycroft"
   - title: "linkedin"
-    url: "https://no.linkedin.com/in/joelmheim"
+    url: "https://no.linkedin.com/in/chaseroycroft"
   - title: "instagram"
-    url: "https://www.instagram.com/joelmheim/"
-  - title: "rss"
+    url: "https://www.instagram.com/chaseroycroft/"
+  - title: "Atom/RSS"
     url: "/feed.xml"
 
 ############
