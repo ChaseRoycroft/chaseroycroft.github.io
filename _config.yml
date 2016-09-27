@@ -113,8 +113,8 @@ syntax-highlight: True
 
 events:
   - image: "/img/timelnie/death.png"
-  - date: "???"
-  - description: "my eventual death"
+    date: "???"
+    description: "my eventual death"
 
 #  - image: "/img/timeline/unclogo.jpg"
 #    date: "2016 - 2020"
